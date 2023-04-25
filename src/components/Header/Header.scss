@@ -5,4 +5,11 @@
     font-style: normal;
     font-weight: 300;
     font-size: 30px;
+    background-color: var(--puprle);
+}
+
+.Header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
