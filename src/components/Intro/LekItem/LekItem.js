@@ -14,25 +14,25 @@ export const LekItem = ({
     }) => {
 
     return (
-        <div className='LekItem-inner'>
-            <div className='LekItem-content'>
-                <img className='lekItem-img' src={Img} alt={alt}></img>
-                
-                <div className='LekItem-textWrapper'>
+        <div className='LekItem'> 
+                <div className='LekItem-content'>
+                    <img className='lekItem-img' src={Img} alt={alt}></img>
+                    
+                    <div className='LekItem-textWrapper'>
 
-                    <div className='LekItem-textBlock'>
-                        <img className='LekItem-marker' src={marker1} alt={alt1}></img>
-                        <h2 className='LekItem-text'>{LekText1}</h2>
-                    </div>
-                    <div className='LekItem-textBlock'>
-                        <img className='LekItem-marker' src={marker2} alt={alt2}></img>
-                        <h2 className='LekItem-text'>{LekText2}</h2>
-                    </div>
-                    <div className='LekItem-subtext'>{LekText3}</div>
+                        <div className='LekItem-textBlock'>
+                            <img className='LekItem-marker' src={marker1} alt={alt1}></img>
+                            <h2 className='LekItem-text'>{LekText1}</h2>
+                        </div>
+                        <div className='LekItem-textBlock'>
+                            <img className='LekItem-marker' src={marker2} alt={alt2}></img>
+                            <h2 className='LekItem-text'>{LekText2}</h2>
+                        </div>
+                        <div className='LekItem-subtext'>{LekText3}</div>
 
-                </div> {/*  LekItem-textWrapper' */}
+                    </div> {/*  LekItem-textWrapper' */}
 
-            </div>
+                </div>
         </div>
     );
 };
