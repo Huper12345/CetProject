@@ -2,23 +2,51 @@
 
 .LekItem {
     width: 50%;
+    height: auto;
     user-select: none;
     position: relative;
     z-index: 500;
-    background-color:  rgba($color: #634376, $alpha: 0.9);
+    background: rgb(232,218,155);
+    background: linear-gradient(0deg, rgba(232,218,155,0.9) 0%, rgba(99,67,118,0.9) 54%);
+    cursor: pointer;
+    display: flex;
 }
 
-.LekItem:hover {
-    background-color: var(--yellow);
+.LekItem:hover::after {
+    opacity: 1;
 }
 
+.LekItem:hover .LekItem-select {
+    opacity: 1;
+}
+
+.LekItem:hover .Mishkaz {
+    opacity: 0.9;
+}
+
+.LekItem::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgb(232,218,155);
+    background: linear-gradient(351deg, rgba(232,218,155,0.8) 4%, rgba(132,175,209,0.8) 28%, rgba(99,67,118,0.8) 57%);
+    opacity: 0;
+    transition: 0.6s;
+    border: 3px solid var(--yellow);
+}
 
 .LekItem-content {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 420px;
+    height: auto;
     width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .LekItem-marker {
@@ -40,22 +68,60 @@
 }
 
 .lekItem-img {
-    max-width: 100%;
+    display: block;
+    width: 100%;
     height: auto;
-    max-width: 850px;
+    max-width: 450px;
     bottom: 100px;
     z-index: 1;
+    padding-top: 20px;
 }
 
 .LekItem-textBlock {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
-    max-width: 160px;
+    max-width: 230px;
     margin-bottom: 10px;
+}
+
+.LekItem-select {
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1300;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: var(--yellow);
+    font-family: 'Nutito-Regular';
+    font-style: normal;
+    font-weight: 400;
+    border: 3px solid var(--yellow);
+    padding: 15px 30px;
+    border-radius: 50px;
+    opacity: 0;
+    transition: 0.6s;
 }
 
 .LekItem-textWrapper {
     width: 100%;
-    padding: 5px;
+    padding: 10px 10px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.Mishkaz {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 25%;
+    transform: translateX(-25%);
+   max-width: 200px;
+   z-index: 1500;
+   opacity: 0;
+   transition: 0.6s;
 }
