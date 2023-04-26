@@ -1,4 +1,5 @@
 import './LekItem.scss';
+import Mishkaz from "./images/mishkaz.png"
 
 
 export const LekItem = ({
@@ -29,6 +30,8 @@ export const LekItem = ({
                             <h2 className='LekItem-text'>{LekText2}</h2>
                         </div>
                         <div className='LekItem-subtext'>{LekText3}</div>
+                        <div className='LekItem-select'>Подробнее</div>
+                        <img className='Mishkaz' src={Mishkaz} alt='Mishkaizayka'></img>
 
                     </div> {/*  LekItem-textWrapper' */}
 
