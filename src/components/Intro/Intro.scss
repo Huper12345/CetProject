@@ -8,5 +8,12 @@
 }
 .Intro-inner {
     display: flex;
+    flex-direction: column;
+}
+
+.Intro-select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 

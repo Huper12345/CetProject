@@ -1,15 +1,18 @@
 @import url(../../../helpers//fonts/fonts.scss);
 
 .LekItem {
-    width: 50%;
+    width: 45%;
     height: auto;
     user-select: none;
     position: relative;
     z-index: 500;
     background: rgb(232,218,155);
-    background: linear-gradient(0deg, rgba(232,218,155,0.9) 0%, rgba(99,67,118,0.9) 54%);
+    background: linear-gradient(0deg, rgba(232,218,155,0.8) 0%, rgba(99,67,118,0.8) 54%);
     cursor: pointer;
     display: flex;
+    margin-bottom: 100px;
+    border-radius: 1%;
+    transition: 0.5s;
 }
 
 .LekItem:hover::after {
@@ -22,6 +25,11 @@
 
 .LekItem:hover .Mishkaz {
     opacity: 0.9;
+}
+
+.LekItem:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
 }
 
 .LekItem::after {
@@ -37,6 +45,7 @@
     opacity: 0;
     transition: 0.6s;
     border: 3px solid var(--yellow);
+    border-radius: 1%;
 }
 
 .LekItem-content {
@@ -58,7 +67,7 @@
     font-family: 'Nutito-Light';
     font-style: normal;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .LekItem-subtext {
@@ -70,18 +79,17 @@
 .lekItem-img {
     display: block;
     width: 100%;
+    max-width: 330px;
     height: auto;
-    max-width: 450px;
-    bottom: 100px;
     z-index: 1;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .LekItem-textBlock {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    max-width: 230px;
+    max-width: 250px;
     margin-bottom: 10px;
 }
 
@@ -107,7 +115,7 @@
 
 .LekItem-textWrapper {
     width: 100%;
-    padding: 10px 10px 40px 30px;
+    padding: 5px 5px 15px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
