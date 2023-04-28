@@ -1,6 +1,6 @@
 import "./Home.scss";
-import { Header } from "../../components/Header";
 import { Intro } from "../../components/Intro";
+import { Header } from "../../components/Header";
 
 export const Home = () => {
     return (
