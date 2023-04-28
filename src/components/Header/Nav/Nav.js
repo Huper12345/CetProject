@@ -1,12 +1,13 @@
 import './Nav.scss';
 import { Link, animateScroll as scroll } from 'react-scroll';
+import {Link as LinkRoute } from "react-router-dom";
 
 
 export const Nav = ({
-href1="#", 
+main="#", 
 href2="#", 
 href3="#",
-text1 ="",
+mainText ="",
 text2 ="",
 text3="",
 
@@ -14,15 +15,10 @@ text3="",
     return (
         <div className='Nav'>
             <div className="Nav-container">
-                <Link
-                to={href1}
-                smooth={true}
-                offset={-70}
-                duration={600}
-                className="Nav-link"
-                >
-                {text1}
-                </Link>
+                <LinkRoute to={main} className="Nav-link">
+                {mainText}
+                </LinkRoute>
+
                 <Link
                 to={href2}
                 smooth={true}

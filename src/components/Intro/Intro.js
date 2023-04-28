@@ -22,6 +22,7 @@ export const Intro = () => {
                         marker2={pills}
                         LekText2="Таблетки"
                         LekText3="Лекарственный препарат цетиризин в таблетках это эффективное средство против аллергии для взрослых"
+                        href='/CetTablets'
                         />
                         <LekItem 
                         Img={TabPack2}

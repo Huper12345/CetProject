@@ -13,6 +13,21 @@
     margin-bottom: 100px;
     border-radius: 1%;
     transition: 0.5s;
+    text-decoration: none;
+    outline: none;
+}
+
+.LekItem:active {
+    text-decoration: none;
+}
+
+.LekItem:hover {
+    text-decoration: none;
+}
+
+.LekItem:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 .LekItem:hover::after {

@@ -9,7 +9,8 @@ export const Header = () => {
                 <div className='Header-inner'>
                     <Logo />
                     <Nav 
-                    text1='Главная'
+                    mainText='Главная'
+                    main='/'
                     text3='Контакты'
                     />
                 </div>
