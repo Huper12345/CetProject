@@ -1,8 +1,8 @@
 import "./Home.scss";
 import { Intro } from "../../components/Intro";
 import { Header } from "../../components/Header";
-import { LekItem } from "../../components/Intro/LekItem";
-import { Preview } from "../../components/Intro/Preview";
+import { LekItem } from '../../components/Intro/LekItem';
+import { Preview } from '../../components/Intro/Preview';
 import TabPack from "../../helpers/Images/Packs/Tab3.png"
 import TabPack2 from "../../helpers/Images/Packs/kaplip5.png"
 import ChildMarker from "../../helpers/Images/Markers/son2.png"
@@ -14,8 +14,9 @@ export const Home = () => {
     return (
         <div className="Home">
             <Header />
-            <Intro >
-             <Preview />
+            <Intro>
+                 <Preview />
+                    <div className='Intro-select'>
                         <LekItem 
                         Img={TabPack}
                         marker1={ChildMarker}
@@ -33,6 +34,7 @@ export const Home = () => {
                         LekText2="Капли"
                         LekText3="Лекарственный препарат цетиризин в каплях это эффективное средство против аллергии для детей"
                         />
+                    </div>
             </Intro>
         </div>
     )
