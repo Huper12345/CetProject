@@ -1,8 +1,8 @@
 import './App.scss';
 import React from "react"
-import {Routes, Route, Link} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import { Home } from '../pages/Home';
-import { CetTablets } from '../pages/CetDrops';
+import { CetTablets } from '../pages/CetTablets';
 import { Layout } from '../pages/Layout';
 
 
