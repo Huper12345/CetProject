@@ -1,10 +1,10 @@
 import './Intro.scss';
 
-export const Intro = ({children}) => {
+export const Intro = ({children, className="Intro-inner", className2="Intro"}) => {
     return (
-        <div className="Intro">
+        <div className={className2}>
             <div className='container'>
-                <div className="Intro-inner">
+                <div className={className}>
                     {children}
                 </div>
             </div>

@@ -6,6 +6,17 @@
     background-size: cover;
     padding-top: 67px;
 }
+
+.Intro-Inner-Tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Intro.Tab {
+    height: 100%;
+}
+
 .Intro-inner {
     display: flex;
     flex-direction: column;

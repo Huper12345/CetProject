@@ -1,0 +1,64 @@
+@import url(../../../helpers//fonts/fonts.scss);
+
+.LekItem-Tab {
+    width: 50%;
+    min-width: 500px;
+    height: auto;
+    user-select: none;
+    position: relative;
+    z-index: 500;
+    display: flex;
+    margin-bottom: 100px;
+    border-radius: 1%;
+}
+
+
+.LekItem-content-Tab {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LekItem-marker-Tab {
+    height: 40px;
+    margin: 0px 20px 0 10px ;
+}
+
+.LekItem-text-Tab {
+    font-family: 'Nutito-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    color: var(--lightyellow);
+}
+
+.lekItem-img-Tab {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    padding-top: 10px;
+}
+
+.LekItem-textBlock-Tab {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.LekItem-textWrapper-Tab {
+    width: 100%;
+    padding: 20px 50px 15px 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    background-color: var(--puprle);
+    opacity: 0.9;
+}
