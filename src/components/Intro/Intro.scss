@@ -11,10 +11,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
 }
 
 .Intro.Tab {
     height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
 
 .Intro-inner {
