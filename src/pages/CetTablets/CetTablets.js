@@ -1,14 +1,30 @@
 import "./CetTablets.scss";
 import { Header } from "../../components/Header";
 import { Intro } from "../../components/Intro";
+import { LekItemTab } from "./LekItemTab";
+import { IntroImage } from "../../helpers/components/IntroTabImage";
+import TabPack2 from "../../helpers/Images/Packs/Tab2.png"
+import ChildMarker from "../../helpers/Images/Markers/son2.png"
+import pills from "../../helpers/Images/Markers/pills.png"
+import Mishka from "../../helpers/Images/Intro/misha.png"
+
 
 
 export const CetTablets = () => {
     return(
         <div className="CetTablets">
             <Header />
-            <Intro>
-                1
+            <Intro 
+            className="Intro-Inner-Tab"
+            className2="Intro">
+                <IntroImage Image={Mishka} />
+                <LekItemTab 
+                Img={TabPack2}
+                marker1={ChildMarker}
+                LekText1="С 6 лет"
+                marker2={pills}
+                LekText2="Таблетки"
+                />
             </Intro>
         </div>
     );

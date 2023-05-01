@@ -1,6 +1,7 @@
 import './LekItem.scss';
 import Mishkaz from "./images/mishkaz.png"
 import {Link} from 'react-router-dom';
+import { Advantages } from '../../../helpers/components/Advantages/Advantages';
 
 
 export const LekItem = ({

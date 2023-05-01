@@ -1,0 +1,61 @@
+.Plus-Icon {
+  display: block;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  transition: 0.1s;
+  margin: 0px 30px 0px 10px;
+}
+
+.Plus-Icon:hover::after {
+  background-color: var(--blue);
+}
+
+.Plus-Icon:hover::before {
+  background-color: var(--blue);
+}
+
+.Plus-Icon.active::after {
+ background-color: var(--blue);
+}
+
+.Plus-Icon.active::before {
+  background-color: var(--blue);
+ }
+
+.Plus-Icon::after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 3px;
+  background-color: var(--lightyellow);
+  transform: translateY(-3px);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.Plus-Icon::before  {
+  content: "";
+  transform: rotate(90deg);
+  display: block;
+  width: 26px;
+  border-radius: 20px;
+  height: 3px;
+  background-color: var(--lightyellow);
+  transition: 0.3s;
+}
+
+.Plus-Icon.active::after {
+  transform: translateY(-3px);
+  transition: 0.3s;
+}
+
+.Plus-Icon.active::before {
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+
+.Advantages-Button:hover .PlusIcon::after {
+  background-color: var(--blue);
+}
+

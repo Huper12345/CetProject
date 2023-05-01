@@ -1,0 +1,69 @@
+@import url(../../../helpers//fonts/fonts.scss);
+
+.Advantages-Button {
+  cursor: pointer;
+  border: 0;
+  background-color: inherit;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 23px;
+  color: var(--lightyellow);
+  text-align: left;
+  width: 100%;
+  user-select: none;
+  font-size: 25px;
+  font-family: Nutito-Light;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.Advantages-Button:hover  {
+  color: var(--blue);
+}
+
+.Advantages-Button:hover .Plus-Icon::after {
+  background-color: var(--blue);
+}
+
+.Advantages-Button:hover .Plus-Icon::before {
+  background-color: var(--blue);
+}
+
+.Advantages-Button.active {
+  color: var(--yellow);
+  font-size: 25px;
+  font-family: Nutito-Light;
+  font-weight: 300;
+}
+
+.Advantages-Button.active {
+  color: var(--blue);
+}
+
+.Dropdown-Menu {
+  display: flex;
+  margin-left: 15px;
+  background-color: var(--lightyellow);
+  border-radius: 15px;
+}
+
+.Drop-Menu-Text {
+  font-size: 20px;
+  color: var(--puprle);
+  text-align: left;
+  user-select: none;
+  width: 100%;
+  max-width: 650px;
+  padding: 15px 20px 0px 20px;
+  font-family: Nutito-Light;
+  font-weight: 300;
+}
+
+.Advantages-Menu-Subtext {
+  margin-top: 5px;
+  font-family: Nutito-Light;
+  font-weight: 300;
+}
+
+
