@@ -1,5 +1,4 @@
 import './LekItemTab.scss';
-import Mishkaz from "./images/mishkaz.png"
 import { Advantages } from '../../../helpers/components/Advantages/Advantages';
 
 
