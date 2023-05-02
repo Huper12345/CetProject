@@ -6,7 +6,8 @@ import { IntroImage } from "../../helpers/components/IntroTabImage";
 import TabPack2 from "../../helpers/Images/Packs/Tab2.png"
 import ChildMarker from "../../helpers/Images/Markers/son2.png"
 import pills from "../../helpers/Images/Markers/pills.png"
-import Mishka from "../../helpers/Images/Intro/misha.png"
+import Mishka from "../../helpers/Images/Intro/mishka2.png"
+import { Title } from "../../helpers/Title";
 
 
 
@@ -26,6 +27,11 @@ export const CetTablets = () => {
                 LekText2="Таблетки"
                 />
             </Intro>
+            <div className="section">
+                <div className="container">
+                    <Title TitleText="Пищевой дневник" />
+                </div>
+            </div>
         </div>
     );
 };

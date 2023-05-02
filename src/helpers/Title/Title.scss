@@ -1,0 +1,19 @@
+@import url(../../helpers/fonts/fonts.scss);
+
+.Title-Text {
+    font-family: 'Nutito-Regular';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--yellow);
+    padding: 10px 25px;
+    background-color: var(--puprle);
+    width: 350px;
+    border-radius: 13px;
+}
+
+.Title-Wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+

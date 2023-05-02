@@ -5,11 +5,13 @@
     min-width: 500px;
     height: auto;
     user-select: none;
-    position: relative;
     z-index: 500;
     display: flex;
     margin-bottom: 100px;
     border-radius: 1%;
+    position: absolute;
+    top: 20px;
+    right: 50px;
 }
 
 
