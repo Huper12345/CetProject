@@ -9,9 +9,6 @@
     display: flex;
     margin-bottom: 100px;
     border-radius: 1%;
-    position: absolute;
-    top: 20px;
-    right: 50px;
 }
 
 
@@ -61,6 +58,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
-    background-color: var(--puprle);
+    background-color: #a4508b;
+background-image: linear-gradient(326deg, #34063f 0%, var(--puprle) 74%);
     opacity: 0.9;
 }

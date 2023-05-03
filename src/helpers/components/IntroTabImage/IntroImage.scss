@@ -8,30 +8,7 @@
     z-index: 1000;
     user-select: none;
     cursor: pointer;
-}
-
-.IntroImage-Wrapper::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: 13px solid var(--blue);
-    border-radius: 49%;
-    position: absolute;
-    z-index: 1500;
-    top: -3px;
-    opacity: 0;
-    right: 0;
-    transition: 0.8s;
-    
-}
-
-.IntroImage-Wrapper:hover::after {
-    opacity: 0.9;
-}
-
-.IntroImage-Wrapper.active .IntroImage-Wrapper::after {
-    opacity: 0.9;
+    transition: 0.5s;
 }
 
 .Dialog-Buble-Wrapper {
@@ -39,6 +16,16 @@
     top: -70px;
     right: -50px;
     z-index: 1700;
+}
+
+.IntroImage-Wrapper:hover::after {
+    opacity: 0.9;
+}
+
+.IntroImage-Wrapper:hover {
+   transform: translateY(-7px);
+   transition: 0.5s;
+    
 }
 
 .Dialog-Buble {
