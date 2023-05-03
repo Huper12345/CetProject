@@ -17,7 +17,7 @@ export const CetTablets = () => {
             <Header />
             <Intro 
             className="Intro-Inner-Tab"
-            className2="Intro">
+            className2="Intro Tab">
                 <IntroImage Image={Mishka} />
                 <LekItemTab 
                 Img={TabPack2}
