@@ -7,7 +7,7 @@
     position: relative;
     z-index: 500;
     background: rgb(232,218,155);
-    background: linear-gradient(0deg, rgba(232,218,155,0.8) 0%, rgba(99,67,118,0.8) 54%);
+    background: linear-gradient(0deg, rgba(232,218,155,0.9) 0%, rgba(77, 49, 94, 0.9) 54%);
     cursor: pointer;
     display: flex;
     margin-bottom: 100px;
@@ -15,6 +15,7 @@
     transition: 0.5s;
     text-decoration: none;
     outline: none;
+    
 }
 
 .LekItem:active {

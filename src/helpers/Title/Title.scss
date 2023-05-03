@@ -4,16 +4,33 @@
     font-family: 'Nutito-Regular';
     font-style: normal;
     font-weight: 400;
-    color: var(--yellow);
+    color: var(--puprle);
     padding: 10px 25px;
-    background-color: var(--puprle);
-    width: 350px;
-    border-radius: 13px;
+    width: 380px;
+    text-transform: uppercase;
+    position: relative;
+   
 }
+
+.Title-Text::after {
+    content: "";
+    display: block;
+    width: 65%;
+    height: 3px;
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #34063f 0%, var(--puprle) 74%);
+    bottom: -5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 
 .Title-Wrapper {
     display: flex;
     justify-content: center;
+    margin: 5px;
 }
 
 

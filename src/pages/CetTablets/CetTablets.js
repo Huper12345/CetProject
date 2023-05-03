@@ -3,6 +3,7 @@ import { Header } from "../../components/Header";
 import { Intro } from "../../components/Intro";
 import { LekItemTab } from "./LekItemTab";
 import { IntroImage } from "../../helpers/components/IntroTabImage";
+import { EatJournal } from "../../helpers/components/EatJournal";
 import TabPack2 from "../../helpers/Images/Packs/Tab2.png"
 import ChildMarker from "../../helpers/Images/Markers/son2.png"
 import pills from "../../helpers/Images/Markers/pills.png"
@@ -30,6 +31,7 @@ export const CetTablets = () => {
             <div className="section">
                 <div className="container">
                     <Title TitleText="Пищевой дневник" />
+                    <EatJournal />
                 </div>
             </div>
         </div>
