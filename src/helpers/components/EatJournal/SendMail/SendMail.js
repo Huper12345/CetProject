@@ -2,12 +2,27 @@ import "./SendMail.scss"
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
 export const SendMail = () => {
     const [emailText, setEmailText] = useState("");
     const form = useRef();
+
+    const notifySucsesfully = () => {
+        toast.success("Успешно отправлено", {
+            position: toast.POSITION.TOP_RIGHT
+          });
+    
+    }
+
+    const notifyFailed = () => {
+        toast.error("Что-то пошло не так...", {
+            position: toast.POSITION.TOP_RIGHT
+          });
+    }
 
     const emailSelect = (e) => {
         setEmailText(e.target.value);
@@ -24,10 +39,10 @@ export const SendMail = () => {
           )
           .then(
             (result) => {
-                alert("Успешно отправлено");
+                notifySucsesfully();
             },
             (error) => {
-                alert("Что-то пошло не так...");
+                notifyFailed();
             }
           );
       };
@@ -57,6 +72,9 @@ export const SendMail = () => {
                 form="Send-Form"
                 >
                 Отправить</button>
+                <ToastContainer 
+                theme="light"
+                />
             </form>
         </div>
     );
