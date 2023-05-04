@@ -9,6 +9,7 @@ import ChildMarker from "../../helpers/Images/Markers/son2.png"
 import pills from "../../helpers/Images/Markers/pills.png"
 import Mishka from "../../helpers/Images/Intro/mishka2.png"
 import { Title } from "../../helpers/Title";
+import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf"
 
 
 
@@ -31,7 +32,7 @@ export const CetTablets = () => {
             <div className="section">
                 <div className="container">
                     <Title TitleText="Пищевой дневник" />
-                    <EatJournal />
+                    <EatJournal FoodDiary={FoodDiaryTab} />
                 </div>
             </div>
         </div>
