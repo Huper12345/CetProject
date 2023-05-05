@@ -1,0 +1,18 @@
+@import "../../../helpers/fonts/fonts.scss";
+@import "../../../helpers/colors/colors.scss";
+
+.RoolsWrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Rools-Wrapper-Text {
+    font-family: 'Nutito-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    text-align: left;
+    color: $lightdark;
+    padding: 0 25px;
+}

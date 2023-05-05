@@ -11,8 +11,6 @@ import Mishka from "../../helpers/Images/Intro/mishka2.png"
 import { Title } from "../../helpers/Title";
 import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf"
 
-
-
 export const CetTablets = () => {
     return(
         <div className="CetTablets">

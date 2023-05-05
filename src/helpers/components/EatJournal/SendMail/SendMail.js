@@ -3,7 +3,9 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { ToastContainer, toast } from 'react-toastify';
+import { SubTitle } from "../../SubTitle";
 import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
@@ -49,7 +51,7 @@ export const SendMail = () => {
 
     return(
         <div className="Send-Mail">
-            <h3 className="Send-Mail-Title">Отправить по элекронной почте</h3>
+            <SubTitle Title="Отправить по электронной почте"/>
             <form 
             className="SendMail-Wrapper"
             onSubmit={sendEmail}

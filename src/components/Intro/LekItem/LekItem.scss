@@ -1,4 +1,5 @@
-@import url(../../../helpers//fonts/fonts.scss);
+@import "../../../helpers//fonts/fonts.scss";
+@import "../../../helpers/colors/colors.scss";
 
 .LekItem {
     width: 45%;
@@ -6,7 +7,7 @@
     user-select: none;
     position: relative;
     z-index: 500;
-    background: rgb(232,218,155);
+    background: $lightyellow;
     background: linear-gradient(0deg, rgba(232,218,155,0.9) 0%, rgba(77, 49, 94, 0.9) 54%);
     cursor: pointer;
     display: flex;
@@ -60,7 +61,7 @@
     background: linear-gradient(351deg, rgba(232,218,155,0.8) 4%, rgba(132,175,209,0.8) 28%, rgba(99,67,118,0.8) 57%);
     opacity: 0;
     transition: 0.6s;
-    border: 3px solid var(--yellow);
+    border: 3px solid $yellow;
     border-radius: 1%;
 }
 
@@ -118,11 +119,11 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 40px;
-    color: var(--yellow);
+    color: $yellow;
     font-family: 'Nutito-Regular';
     font-style: normal;
     font-weight: 400;
-    border: 3px solid var(--yellow);
+    border: 3px solid $yellow;
     padding: 15px 30px;
     border-radius: 50px;
     opacity: 0;

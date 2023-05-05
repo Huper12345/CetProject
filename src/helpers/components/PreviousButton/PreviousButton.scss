@@ -1,0 +1,69 @@
+@import "../../colors/colors.scss";
+@import "../../fonts/fonts.scss";
+
+.PreviousButton {
+    font-family: 'Nutito-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 3px solid $purple;
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    line-height: 1;
+    margin: 10px 10px 10px 0px;
+    padding: 1.0em 1.0em 1.0em 2.3em;
+    text-decoration: none;
+    text-align: center;
+    color: $purple;
+    max-width: 130px;
+    position: relative;
+}
+
+.PreviousButton::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-left: 3px solid $purple;
+    border-bottom: 3px solid $purple;
+    transform: rotate(45deg);
+    left: 17px;
+    top: 20px;
+    transition: 0.5s;
+}
+
+.PreviousButton:hover::before {
+   border-color: $white;
+   transition: 0.5s;
+}
+
+.PreviousButton:hover {
+    color: $white;
+    outline: 0;
+  }
+
+  .PreviousButton:focus {
+    outline: 0;
+  }
+  
+  .PreviousButton {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+
+  .PreviousButton:hover {
+    box-shadow: 0 0 40px 40px $darkviolet inset;
+    border: 3px solid $darkviolet ;
+  }

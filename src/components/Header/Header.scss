@@ -1,12 +1,13 @@
-@import url(../../helpers/fonts/fonts.scss);
+@import "../../helpers/fonts/fonts.scss";
+@import "../../helpers/colors/colors.scss";
 
 .Header {
     font-family: 'Nutito-Light';
     font-style: normal;
     font-weight: 300;
     font-size: 30px;
-    background-color: #a4508b;
-background-image: linear-gradient(326deg, #34063f 0%, var(--puprle) 74%);
+    background-color: $lightrose;
+    background-image: linear-gradient(326deg, $darkviolet 0%, $purple 74%);
 
     position: absolute;
     width: 100%;

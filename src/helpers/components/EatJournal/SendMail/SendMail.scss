@@ -1,4 +1,5 @@
-@import url(../../../../helpers/fonts/fonts.scss);
+@import "../../../../helpers/fonts/fonts.scss";
+@import "../../../../helpers/colors/colors.scss";
 
 
 .SendMail-Wrapper {
@@ -16,17 +17,16 @@
     width: 70%;
     font-size: 20px;
     padding: 10px 10px 10px 10px;
-    border: 2px solid var(--darkpink);
-    background-color: var(--white);
+    background-color: $white;
     border-radius: 10px;
     transition: 0.2s;
-    border: 3px solid var(--puprle);
+    border: 3px solid $purple;
     cursor: pointer;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .SendMail-Input::placeholder {
-    color: var(--puprle);
+    color: $purple;
     font-family: 'Nutito-Light';
     font-style: normal;
     font-weight: 300;
@@ -35,9 +35,8 @@
   
   .SendMail-Input:focus {
     outline: 0;
-    background-color: var(--darkpink);
-    color: var(--puprle);
-    border-color: var(--yellow);
+    color: $purple;
+    border-color: $yellow;
   }
 
   .SendMail-Button {
@@ -49,7 +48,7 @@
     -moz-appearance: none;
     appearance: none;
     background-color: transparent;
-    border: 3px solid var(--puprle);
+    border: 3px solid $purple;
     border-radius: 0.6em;
     cursor: pointer;
     display: -webkit-box;
@@ -64,11 +63,11 @@
     padding: 0.84em 1.5em;
     text-decoration: none;
     text-align: center;
-    color: var(--puprle);
+    color: $purple;
 }
 
 .SendMail-Button:hover {
-    color: var(--white);
+    color: $white;
     outline: 0;
   }
 
@@ -81,34 +80,6 @@
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   }
   .SendMail-Button:hover {
-    box-shadow: 0 0 40px 40px #34063f inset;
-    border: 3px solid #34063f ;
+    box-shadow: 0 0 40px 40px $darkviolet inset;
+    border: 3px solid $darkviolet;
   }
-
-  .Send-Mail-Title {
-    font-family: 'Nutito-Regular';
-    font-style: normal;
-    font-weight: 400;
-    color: var(--puprle);
-    width: 100%;
-    text-align: left;
-    text-transform: uppercase;
-    position: relative;
-    margin: 20px 0;
-    padding-left: 25px;
-   
-}
-
-.Send-Mail-Title::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 3.5px;
-    height: 100%;
-    max-height: 20px;
-    left: 0px;
-    bottom: 6px;
-    background-color: #a4508b;
-    background-image: linear-gradient(326deg, #34063f 0%, var(--puprle) 74%);
-
-}

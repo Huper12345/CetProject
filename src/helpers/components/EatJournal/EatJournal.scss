@@ -1,4 +1,5 @@
-@import url(../../../helpers/fonts/fonts.scss);
+@import "../../../helpers/fonts/fonts.scss";
+@import "../../../helpers/colors/colors.scss";
 
 .EatJournal {
     margin-top: 60px;
@@ -31,7 +32,10 @@
     font-weight: 300;
     position: relative;
     padding: 5px 0px 5px 30px;
+    font-size: 23px;
+    color: $lightdark;
 }
+
 
 .EatJournal-Title::before {
     content: "";
@@ -42,8 +46,8 @@
     max-height: 90px;
     left: 5px;
     bottom: 6px;
-    background-color: #a4508b;
-    background-image: linear-gradient(326deg, #34063f 0%, var(--puprle) 74%);
+    background-color: $lightrose;
+    background-image: linear-gradient(326deg, $darkviolet 0%, $purple 74%);
 }
 
 .EatJournal-Button {
@@ -55,7 +59,7 @@
     -moz-appearance: none;
     appearance: none;
     background-color: transparent;
-    border: 3px solid var(--puprle);
+    border: 3px solid $purple;
     border-radius: 0.6em;
     cursor: pointer;
     display: -webkit-box;
@@ -70,8 +74,7 @@
     padding: 1.2em 2.8em;
     text-decoration: none;
     text-align: center;
-    color: var(--puprle);
-    text-transform: u;
+    color: $purple;
 }
 
 .EatJournal-Download {
@@ -79,9 +82,8 @@
     justify-content: center;
 }
 
-
 .EatJournal-Button:hover {
-    color: var(--white);
+    color: $white;
     outline: 0;
   }
 
@@ -94,6 +96,6 @@
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   }
   .EatJournal-Button:hover {
-    box-shadow: 0 0 40px 40px #34063f inset;
-    border: 3px solid #34063f ;
+    box-shadow: 0 0 40px 40px $darkviolet inset;
+    border: 3px solid $darkviolet ;
   }
