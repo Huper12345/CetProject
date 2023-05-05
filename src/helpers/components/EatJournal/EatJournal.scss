@@ -31,7 +31,10 @@
     font-weight: 300;
     position: relative;
     padding: 5px 0px 5px 30px;
+    font-size: 23px;
+    color: var(--lightdark);
 }
+
 
 .EatJournal-Title::before {
     content: "";
@@ -78,7 +81,6 @@
     display: flex;
     justify-content: center;
 }
-
 
 .EatJournal-Button:hover {
     color: var(--white);

@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom';
 import { Home } from '../pages/Home';
 import { CetTablets } from '../pages/CetTablets';
 import { Layout } from '../pages/Layout';
+import { EatJournalRools } from '../pages/EatJournalRools';
 
 
 export const App = () => {
@@ -14,6 +15,7 @@ export const App = () => {
 
           <Route index element={<Home />} />
           <Route path='CetTablets' element={<CetTablets />} />
+          <Route path='/EatJournalRools' element={<EatJournalRools />} />
 
         </Route>
       </Routes>

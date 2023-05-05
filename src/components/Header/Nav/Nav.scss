@@ -1,4 +1,5 @@
-@import url(../../../helpers/fonts/fonts.scss);
+@import "../../../helpers/fonts/fonts.scss";
+@import "../../../helpers/colors/colors.scss";
 
 
 .Nav-container {
@@ -13,7 +14,7 @@
     font-weight: 300;
     margin: 0 10px;
     cursor: pointer;
-    color: var(--yellow);
+    color: $yellow;
     transition: 0.2s;
     text-decoration: none;
 }
