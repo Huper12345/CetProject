@@ -6,7 +6,6 @@ import { CetTablets } from '../pages/CetTablets';
 import { Layout } from '../pages/Layout';
 import { EatJournalRools } from '../pages/EatJournalRools';
 
-
 export const App = () => {
   return (
     <div className="App">
@@ -14,11 +13,12 @@ export const App = () => {
         <Route path='/' element={<Layout />}>
 
           <Route index element={<Home />} />
+          <Route path='/Food-Diary-Rools' element={<EatJournalRools />} />
           <Route path='CetTablets' element={<CetTablets />} />
-          <Route path='/EatJournalRools' element={<EatJournalRools />} />
 
         </Route>
       </Routes>
+      
     </div>
   );
 };
