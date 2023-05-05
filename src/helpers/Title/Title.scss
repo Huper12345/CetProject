@@ -1,10 +1,11 @@
-@import url(../../helpers/fonts/fonts.scss);
+@import "../../helpers/fonts/fonts.scss";
+@import "../../helpers/colors/colors.scss";
 
 .Title-Text {
     font-family: 'Nutito-Regular';
     font-style: normal;
     font-weight: 400;
-    color: var(--puprle);
+    color: $purple;
     padding: 10px 25px;
     width: 380px;
     text-transform: uppercase;
@@ -17,15 +18,13 @@
     display: block;
     width: 65%;
     height: 3px;
-    background-color: #a4508b;
-    background-image: linear-gradient(326deg, #34063f 0%, var(--puprle) 74%);
+    background-color: $lightrose;
+    background-image: linear-gradient(326deg, $darkviolet 0%, $purple 74%);
     bottom: -5px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
-
-
 
 .Title-Wrapper {
     display: flex;

@@ -1,4 +1,5 @@
 @import "../../../helpers/fonts/fonts.scss";
+@import "../../../helpers/colors/colors.scss";
 
 .RoolsWrapper {
     margin-top: 50px;
@@ -12,6 +13,6 @@
     font-weight: 300;
     font-size: 23px;
     text-align: left;
-    color: var(--lightdark);
+    color: $lightdark;
     padding: 0 25px;
 }

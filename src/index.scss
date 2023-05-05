@@ -1,12 +1,5 @@
-:root {
-  --white: #fff;
-  --puprle: #634376;
-  --yellow: #e8da9b;
-  --blue: #84afd1;
-  --lightdark: #333333;
-  --lightyellow:  #fffcb0;
-  --lightdark: #333333;
-}
+@import "./helpers/colors/colors.scss";
+@import "./helpers/fonts/fonts.scss";
 
 body {
   margin: 0;

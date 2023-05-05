@@ -1,4 +1,5 @@
-@import url(../../../helpers//fonts/fonts.scss);
+@import "../../../helpers//fonts/fonts.scss";
+@import "../../../helpers/colors/colors.scss";
 
 .LekItem-Tab {
     width: 40%;
@@ -10,7 +11,6 @@
     margin-bottom: 100px;
     border-radius: 1%;
 }
-
 
 .LekItem-content-Tab {
     display: flex;
@@ -31,7 +31,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 26px;
-    color: var(--lightyellow);
+    color: $lightyellow;
 }
 
 .lekItem-img-Tab {
@@ -49,7 +49,6 @@
     margin-bottom: 10px;
 }
 
-
 .LekItem-textWrapper-Tab {
     width: 100%;
     padding: 20px 50px 15px 30px;
@@ -58,7 +57,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
-    background-color: #a4508b;
-background-image: linear-gradient(326deg, #34063f 0%, var(--puprle) 74%);
+    background-color: $lightrose;
+    background-image: linear-gradient(326deg, $darkviolet 0%, $purple 74%);
     opacity: 0.9;
 }

@@ -1,4 +1,5 @@
-@import url(../../../helpers//fonts/fonts.scss);
+@import "../../../helpers//fonts/fonts.scss";
+@import "../../../helpers/colors/colors.scss";
 
 .IntroImage-Wrapper {
     width: 40%;
@@ -25,7 +26,6 @@
 .IntroImage-Wrapper:hover {
    transform: translateY(-7px);
    transition: 0.5s;
-    
 }
 
 .Dialog-Buble {
@@ -35,12 +35,12 @@
     width: 230px;
 	height: 130px;
 	text-align: left;
-	background-color: rgba($color: #634376, $alpha: 0.9);
-	border: 8px solid var(--blue);
+	background-color: rgba($color: $purple, $alpha: 0.9);
+	border: 8px solid $blue;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
-    color: var(--yellow);
+    color: $yellow;
     opacity: 0;
     font-family: 'Nutito-Light';
     font-style: normal;
@@ -57,7 +57,7 @@
 	left: 22px; 
 	top: 120px; 
 	border: 25px solid; 
-	border-color: var(--blue) transparent transparent var(--blue); 
+	border-color: $blue transparent transparent $blue; 
 }
 
 .Dialog-Buble.active {

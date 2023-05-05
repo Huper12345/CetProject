@@ -1,4 +1,5 @@
-@import '../../helpers/fonts/fonts.scss';
+@import "../../helpers/fonts/fonts.scss";
+@import "../../helpers/colors/colors.scss";
 
 .Rools-Wrapper {
     margin-top: 30px;
@@ -8,7 +9,7 @@
     font-family: 'Nutito-Regular';
     font-style: normal;
     font-weight: 400;
-    color: var(--puprle);
+    color: $purple;
     width: 100%;
     text-align: left;
     text-transform: uppercase;
@@ -27,8 +28,8 @@
     max-height: 20px;
     left: 0px;
     bottom: 6px;
-    background-color: #a4508b;
-    background-image: linear-gradient(326deg, #34063f 0%, var(--puprle) 74%);
+    background-color: $lightrose;
+    background-image: linear-gradient(326deg, $darkviolet 0%, $purple 74%);
 
 }
 
@@ -45,7 +46,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 21px;
-    color: var(--puprle);
+    color: $purple;
 }
 
 .Rools-Img {

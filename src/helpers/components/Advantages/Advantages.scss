@@ -1,4 +1,5 @@
-@import url(../../../helpers//fonts/fonts.scss);
+@import "../../../helpers//fonts/fonts.scss";
+@import "../../../helpers/colors/colors.scss";
 
 .Advantages-Button {
   cursor: pointer;
@@ -8,7 +9,7 @@
   justify-content: flex-start;
   align-items: center;
   font-size: 23px;
-  color: var(--lightyellow);
+  color: $lightyellow;
   text-align: left;
   width: 100%;
   user-select: none;
@@ -19,19 +20,19 @@
 }
 
 .Advantages-Button:hover  {
-  color: var(--blue);
+  color: $blue;
 }
 
 .Advantages-Button:hover .Plus-Icon::after {
-  background-color: var(--blue);
+  background-color: $blue;
 }
 
 .Advantages-Button:hover .Plus-Icon::before {
-  background-color: var(--blue);
+  background-color: $blue;
 }
 
 .Advantages-Button.active {
-  color: var(--yellow);
+  color: $yellow;
   font-size: 25px;
   font-family: Nutito-Light;
   font-weight: 300;
@@ -39,19 +40,19 @@
 }
 
 .Advantages-Button.active {
-  color: var(--blue);
+  color: $blue;
 }
 
 .Dropdown-Menu {
   display: flex;
   margin-left: 15px;
-  background-color: var(--lightyellow);
+  background-color: $lightyellow;
   border-radius: 15px;
 }
 
 .Drop-Menu-Text {
   font-size: 20px;
-  color: var(--puprle);
+  color: $purple;
   text-align: left;
   user-select: none;
   width: 100%;

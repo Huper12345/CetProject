@@ -1,7 +1,8 @@
-@import url(../../helpers/fonts/fonts.scss);
+@import "../../helpers/fonts/fonts.scss";
+@import "../../helpers/colors/colors.scss";
 
 .Home {
-    background-color: var(--white);
+    background-color: $white;
     position: relative;
     overflow: hidden;
     position: relative;

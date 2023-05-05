@@ -1,3 +1,5 @@
+@import "../../../colors/colors.scss";
+
 .Plus-Icon {
   display: block;
   cursor: pointer;
@@ -9,19 +11,19 @@
 }
 
 .Plus-Icon:hover::after {
-  background-color: var(--blue);
+  background-color: $blue;
 }
 
 .Plus-Icon:hover::before {
-  background-color: var(--blue);
+  background-color: $blue;
 }
 
 .Plus-Icon.active::after {
- background-color: var(--blue);
+ background-color: $blue;
 }
 
 .Plus-Icon.active::before {
-  background-color: var(--blue);
+  background-color: $blue;
   transition: 0.3s;
  }
 
@@ -30,7 +32,7 @@
   display: block;
   width: 26px;
   height: 3px;
-  background-color: var(--lightyellow);
+  background-color: $lightyellow;
   transform: translateY(-3px);
   border-radius: 20px;
   transition: 0.3s;
@@ -43,7 +45,7 @@
   width: 26px;
   border-radius: 20px;
   height: 3px;
-  background-color: var(--lightyellow);
+  background-color: $lightyellow;
   transition: 0.3s;
 }
 
@@ -58,6 +60,6 @@
 }
 
 .Advantages-Button:hover .PlusIcon::after {
-  background-color: var(--blue);
+  background-color: $blue;
 }
 
