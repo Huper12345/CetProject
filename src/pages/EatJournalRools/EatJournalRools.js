@@ -15,7 +15,7 @@ export const EatJournalRools = () => {
             <Header />
             <div className="container">
                 <div className="Eat-Rools-Wrapper">
-                    <PreviousButton linkWay="/CetTablets"/>
+                    <PreviousButton linkWay="/Tablets"/>
                     <Title TitleText="Правила ведения дневника" />
                     <div className="Rools-Item">
                         <img alt="Calendar" src={Calendar} className="Rools-Img"></img>

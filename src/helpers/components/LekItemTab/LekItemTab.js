@@ -1,5 +1,5 @@
 import './LekItemTab.scss';
-import { Advantages } from '../../../helpers/components/Advantages/Advantages';
+import { Advantages } from '../Advantages';
 
 
 export const LekItemTab = ({
@@ -10,7 +10,11 @@ export const LekItemTab = ({
     marker1, 
     LekText2, 
     alt2, 
-    marker2, 
+    marker2,
+    buttonText1,
+    dropText1, 
+    buttonText2,
+    dropText2,
     }) => {
 
     return (
@@ -29,12 +33,12 @@ export const LekItemTab = ({
                             <h2 className='LekItem-text-Tab'>{LekText2}</h2>
                         </div>
                         <Advantages 
-                        buttonText="Возможность длительного применения"
-                        droptext="Препарат можно использовать для вторичной профилактики аллергических заболеваний"
+                        buttonText={buttonText1}
+                        droptext={dropText1}
                         />
                         <Advantages 
-                        buttonText="Эталон Н1 антигистаминного средства"
-                        droptext="значительно облегчает назальные и глазные симптомы сезонного и круглогодичного аллергического ринита, хронической идиопатической  крапивницы"
+                        buttonText={buttonText2}
+                        droptext={dropText2}
                         />
 
                     </div> {/*  LekItem-textWrapper' */}
