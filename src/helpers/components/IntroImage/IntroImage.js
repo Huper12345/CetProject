@@ -2,7 +2,7 @@ import "./IntroImage.scss";
 import { useState } from "react";
 
 
-export const IntroImage = ({Image}) => {
+export const IntroImage = ({Image, alt, BubleText}) => {
     const [open, setOpen] = useState(false);
   
     const handleOpen = () => {
@@ -12,9 +12,9 @@ export const IntroImage = ({Image}) => {
     return(
         <div onClick={handleOpen} className="IntroImage-Wrapper">
             <div className="Intro-Image-Inner">
-                <img className="IntroImage" alt="Mishka" src={Image}></img>
+                <img className="IntroImage" alt={alt} src={Image}></img>
                     <div className="Dialog-Buble-Wrapper">
-                        <p className={open ? 'Dialog-Buble active' : 'Dialog-Buble'}>Мы с аллергией не друзья, цетиризин есть у меня!</p>
+                        <p className={open ? 'Dialog-Buble active' : 'Dialog-Buble'}>{BubleText}</p>
                     </div>
             </div>
         </div> 

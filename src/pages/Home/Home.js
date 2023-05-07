@@ -24,7 +24,7 @@ export const Home = () => {
                         marker2={pills}
                         LekText2="Таблетки"
                         LekText3="Лекарственный препарат цетиризин в таблетках это эффективное средство против аллергии для взрослых"
-                        href='/CetTablets'
+                        href='/Tablets'
                         />
                         <LekItem 
                         Img={TabPack2}
@@ -33,6 +33,7 @@ export const Home = () => {
                         marker2={dropMarker}
                         LekText2="Капли"
                         LekText3="Лекарственный препарат цетиризин в каплях это эффективное средство против аллергии для детей"
+                        href='/Drops'
                         />
                     </div>
             </Intro>
