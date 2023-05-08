@@ -1,0 +1,10 @@
+@import "../../colors/colors.scss";
+
+.Questions {
+    background-color: $lightrose;
+    background-image: linear-gradient(326deg, $darkviolet 0%, $purple 74%);
+}
+
+.Questions-inner {
+    margin: 40px 0px;
+}

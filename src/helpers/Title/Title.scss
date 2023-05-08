@@ -13,6 +13,17 @@
    
 }
 
+.Title-Text.yellow {
+    color: $yellow;
+}
+
+.Title-Text.yellow::after {
+    background-color: $yellow;
+    background-image: linear-gradient(326deg, $blue 0%, $yellow 74%);
+}
+
+
+
 .Title-Text::after {
     content: "";
     display: block;

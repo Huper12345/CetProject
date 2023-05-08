@@ -2,10 +2,10 @@ import "./Title.scss"
 
 
 
-export const Title = ({TitleText}) => {
+export const Title = ({TitleText, TitleColor="Title-Text"}) => {
     return(
         <div className="Title-Wrapper">
-            <h2 className="Title-Text">{TitleText}</h2>
+            <h2 className={TitleColor}>{TitleText}</h2>
         </div>
     )
 }

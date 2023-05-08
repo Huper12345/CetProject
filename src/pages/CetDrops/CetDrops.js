@@ -3,10 +3,14 @@ import { Header } from "../../components/Header";
 import { Intro } from "../../components/Intro";
 import { LekItemTab } from "../../helpers/components/LekItemTab";
 import { IntroImage } from "../../helpers/components/IntroImage";
+import { Title } from "../../helpers/Title";
+import { EatJournal } from "../../helpers/components/EatJournal";
+import { Questions } from "../../helpers/components/Questions";
 import Zaec from "../../helpers/Images/Intro/zaec.png"
 import DropsPack from "../../helpers/Images/Packs/kaplip7.png"
 import BabyMarker from "../../helpers/Images/Markers/baby-boy1.png"
 import DropsMarker from "../../helpers/Images/Markers/water-drop.png"
+import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf"
 
 
 
@@ -34,6 +38,13 @@ export const CetDrops = () => {
                 dropText2="Капли для приёма внутрь наиболее удобная лекарственная форма  для применения в детской практике."
                 />
             </Intro>
+            <div className="section">
+                <div className="container">
+                    <Title TitleText="Пищевой дневник" />
+                    <EatJournal FoodDiary={FoodDiaryTab} />
+                </div>
+            </div>
+            <Questions />
         </div>
     );
 };
