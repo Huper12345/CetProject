@@ -9,7 +9,8 @@ import ChildMarker from "../../helpers/Images/Markers/son2.png"
 import pills from "../../helpers/Images/Markers/pills.png"
 import Mishka from "../../helpers/Images/Intro/mishka2.png"
 import { Title } from "../../helpers/Title";
-import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf"
+import { Questions } from "../../helpers/components/Questions";
+import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf";
 
 export const CetTablets = () => {
     return(
@@ -40,6 +41,7 @@ export const CetTablets = () => {
                     <EatJournal FoodDiary={FoodDiaryTab} />
                 </div>
             </div>
+            <Questions />
         </div>
     );
 };

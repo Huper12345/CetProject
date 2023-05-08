@@ -1,6 +1,15 @@
 @import "../../../helpers//fonts/fonts.scss";
 @import "../../../helpers/colors/colors.scss";
 
+
+
+.Advantages {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+}
+
 .Advantages-Button {
   cursor: pointer;
   border: 0;
@@ -17,6 +26,12 @@
   font-family: Nutito-Light;
   font-weight: 300;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.Advantages-Button.purple {
+  color: $purple;
 }
 
 .Advantages-Button:hover  {

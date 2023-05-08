@@ -4,7 +4,7 @@ import "./Advantages.scss";
 import { PlusIcon } from "./PlusIcon";
 
 
-export const Advantages = ({buttonText, droptext, subtext}) => {
+export const Advantages = ({buttonText, droptext, subtext, Style="Advantages-Button"}) => {
     const [open, setOpen] = useState(false);
   
     const handleOpen = () => {
@@ -15,7 +15,7 @@ export const Advantages = ({buttonText, droptext, subtext}) => {
     return (
       <div className="Advantages">
         <button
-          className={open ? 'Advantages-Button active' : 'Advantages-Button'}
+          className={open ? 'Advantages-Button active' : Style}
           onClick={handleOpen}
         ><PlusIcon classIcon={open ? 'Plus-Icon active' : 'Plus-Icon'} /> {buttonText}
         </button>
