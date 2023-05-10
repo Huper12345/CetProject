@@ -1,7 +1,6 @@
 import './LekItemTab.scss';
 import { Advantages } from '../Advantages';
 
-
 export const LekItemTab = ({
     Img,
     alt, 
@@ -42,7 +41,6 @@ export const LekItemTab = ({
                         />
 
                     </div> {/*  LekItem-textWrapper' */}
-
                 </div>
         </div>
     );

@@ -2,7 +2,7 @@ import './Header.scss';
 import { Logo } from './Logo';
 import { Nav } from './Nav';
 
-export const Header = () => {
+export const Header = ({BuyButtonStatus, BuyButtonHref}) => {
     return (
         <div className="Header">
             <div className='container'>
@@ -11,7 +11,10 @@ export const Header = () => {
                     <Nav 
                     mainText='Главная'
                     main='/'
-                    text3='Контакты'
+                    text2='Контакты'
+                    href2='#'
+                    BuyButton={BuyButtonStatus}
+                    hrefBuy={BuyButtonHref}
                     />
                 </div>
             </div>

@@ -4,19 +4,24 @@
 
 .Nav-container {
     display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 20px 0px;
 }
 
 .Nav-link {
     font-size: 21px;
     font-family: Nutito-Light;
     font-weight: 300;
-    margin: 0 10px;
+    margin: 0px 10px;
     cursor: pointer;
     color: $yellow;
     transition: 0.2s;
     text-decoration: none;
+}
+
+.Nav-link.Hide {
+    display: none;
 }
 
 .Nav-link:hover {

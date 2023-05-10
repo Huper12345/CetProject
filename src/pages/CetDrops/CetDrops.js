@@ -17,7 +17,10 @@ import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf"
 export const CetDrops = () => {
     return(
         <div className="CetDrops">
-            <Header />
+            <Header
+            BuyButtonStatus="Nav-link"
+            BuyButtonHref="https://tabletka.by/result?ls=20070"
+            />
             <Intro 
             className="Intro-Inner-Tab"
             className2="Intro Tab"
@@ -36,7 +39,8 @@ export const CetDrops = () => {
                 dropText1="Цетиризин широко используется в детской практике, в том числе у пациентов младшего возраста (6 месяцев до 2 лет) из группы повышенного риска формирования бронхиальной астмы."
                 buttonText2="Удобная лекарственная форма"
                 dropText2="Капли для приёма внутрь наиболее удобная лекарственная форма  для применения в детской практике."
-                />
+                /> 
+        
             </Intro>
             <div className="section">
                 <div className="container">
