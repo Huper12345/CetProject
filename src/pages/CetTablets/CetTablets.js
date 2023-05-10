@@ -15,7 +15,10 @@ import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf";
 export const CetTablets = () => {
     return(
         <div className="CetTablets">
-            <Header />
+            <Header 
+            BuyButtonStatus="Nav-link"
+            BuyButtonHref="https://tabletka.by/result?ls=21211"
+            />
             <Intro 
             className="Intro-Inner-Tab"
             className2="Intro Tab">

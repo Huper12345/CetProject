@@ -7,15 +7,20 @@ export const Nav = ({
 main="#", 
 href2="#", 
 href3="#",
+hrefBuy="#",
 mainText ="",
 text2 ="",
 text3="",
+BuyButton="Nav-link Hide",
 
 }) => {
     return (
         <div className='Nav'>
             <div className="Nav-container">
-                <LinkRoute to={main} className="Nav-link">
+                <LinkRoute
+                to={main} 
+                className="Nav-link"
+                >
                 {mainText}
                 </LinkRoute>
 
@@ -28,15 +33,14 @@ text3="",
                 >
                 {text2}
                 </Link>
-                <Link
-                to={href3}
-                smooth={true}
-                offset={-70}
-                duration={600}
-                className="Nav-link"
+                                
+                <a 
+                className={BuyButton}
+                href={hrefBuy}
+                target="blank"
                 >
-                {text3}
-                </Link>
+                Где купить?
+                </a>
             </div>
         </div>
     );
