@@ -11,6 +11,7 @@ import Mishka from "../../helpers/Images/Intro/mishka2.png"
 import { Title } from "../../helpers/Title";
 import { Questions } from "../../helpers/components/Questions";
 import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf";
+import { DosageUsage } from "../../helpers/components/DosageUsage";
 
 export const CetTablets = () => {
     return(
@@ -38,6 +39,12 @@ export const CetTablets = () => {
                 dropText2="значительно облегчает назальные и глазные симптомы сезонного и круглогодичного аллергического ринита, хронической идиопатической  крапивницы"
                 />
             </Intro>
+            <DosageUsage 
+            MainText="Лекарственный препарат «Цетиризин» таблетки в дозировке 10 мг предназначен для применения у взрослых и детей с 6 лет и старше для облегчения:"
+            subtext1="Назальных и глазных симптомов круглогодичного и сезонного аллергического ринита и аллергического конъюктевита, зуда, чиханья, заложенности носа, ринореи, слезоточения, гипермии конъюктевиты"
+            subtext2="Гипермии хронической идиопатической крапивницы"
+            href="https://www.rceth.by/NDfiles/instr/20_12_3093_s.pdf"
+            />
             <div className="section">
                 <div className="container">
                     <Title TitleText="Пищевой дневник" />

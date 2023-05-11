@@ -6,17 +6,22 @@ import {Link as LinkRoute } from "react-router-dom";
 export const Nav = ({
 main="#", 
 href2="#", 
-href3="#",
 hrefBuy="#",
 mainText ="",
 text2 ="",
-text3="",
 BuyButton="Nav-link Hide",
 
 }) => {
     return (
         <div className='Nav'>
             <div className="Nav-container">
+                <a 
+                className={BuyButton}
+                href={hrefBuy}
+                target="blank"
+                >
+                Где купить?
+                </a>
                 <LinkRoute
                 to={main} 
                 className="Nav-link"
@@ -32,15 +37,7 @@ BuyButton="Nav-link Hide",
                 className="Nav-link"
                 >
                 {text2}
-                </Link>
-                                
-                <a 
-                className={BuyButton}
-                href={hrefBuy}
-                target="blank"
-                >
-                Где купить?
-                </a>
+                </Link>                
             </div>
         </div>
     );
