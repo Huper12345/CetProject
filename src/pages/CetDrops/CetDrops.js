@@ -6,6 +6,7 @@ import { IntroImage } from "../../helpers/components/IntroImage";
 import { Title } from "../../helpers/Title";
 import { EatJournal } from "../../helpers/components/EatJournal";
 import { Questions } from "../../helpers/components/Questions";
+import { DosageUsage } from "../../helpers/components/DosageUsage";
 import Zaec from "../../helpers/Images/Intro/zaec.png"
 import DropsPack from "../../helpers/Images/Packs/kaplip7.png"
 import BabyMarker from "../../helpers/Images/Markers/baby-boy1.png"
@@ -42,6 +43,12 @@ export const CetDrops = () => {
                 /> 
         
             </Intro>
+            <DosageUsage 
+            MainText="Лекарственный препарат «Цетиризин» капли в дозировке 10 мг/мл предназначен для применения у взрослых и детей с 6 месяцев и старше для облегчения:"
+            subtext1="Симптомов сезонного и постоянного аллергического ринита и конъюктивита"
+            subtext2="Гипермии хронической идиопатической крапивницы"
+            href="https://www.rceth.by/NDfiles/instr/19_07_2952_s.pdf"
+            />
             <div className="section">
                 <div className="container">
                     <Title TitleText="Пищевой дневник" />

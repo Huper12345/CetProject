@@ -1,0 +1,46 @@
+@import "../../../colors/colors.scss";
+@import "../../../fonts/fonts.scss";
+
+.Instruction-Button {
+    font-family: 'Nutito-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 3px solid $yellow;
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    line-height: 1;
+    margin: 50px 0px 0px 0px;
+    padding: 1.2em 2.0em;
+    text-decoration: none;
+    text-align: center;
+    color: $yellow;
+    max-width: 260px;
+}
+
+.Instruction-Button:hover {
+    color: $purple;
+    outline: 0;
+    box-shadow: 0 0 40px 40px $yellow inset;
+    border: 3px solid $yellow ;
+  }
+
+  .Instruction-Button:focus {
+    outline: 0;
+  }
+  
+  .Instruction-Button {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
