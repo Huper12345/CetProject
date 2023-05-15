@@ -6,6 +6,7 @@ import { CetTablets } from '../pages/CetTablets';
 import { Layout } from '../pages/Layout';
 import { EatJournalRools } from '../pages/EatJournalRools';
 import { CetDrops } from '../pages/CetDrops';
+import { One } from '../pages/Publications/One';
 
 export const App = () => {
   return (
@@ -17,11 +18,11 @@ export const App = () => {
           <Route path='/Food-Diary-Rools' element={<EatJournalRools />} />
           <Route path='Tablets' element={<CetTablets />} />
           <Route path='Drops' element={<CetDrops />} />
+          <Route path='/Publications/One' element={<One />} />
 
         </Route>
       </Routes>
-      
-    </div>
+      </div>
   );
 };
 

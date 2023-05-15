@@ -1,0 +1,115 @@
+@import "../../../helpers/colors/colors.scss";
+@import "../../../helpers/fonts/fonts.scss";
+
+
+.PublicationsItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: $lightrose;
+    background-image: linear-gradient(326deg, $darkviolet 0%, $purple 74%);
+    padding: 25px;
+    width: 49%;
+    border-radius: 15px;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.PubclicationItem-Inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.Pubclications-Content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.Publications-Title {
+    font-family: 'Nutito-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: $yellow;
+}
+
+.Publications-Img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.Publications-Image-Container {
+    max-width: 550px;
+}
+
+.Pubclications-Text {
+    text-align: left;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: $purple;
+    font-family: 'Nutito-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    height: 100%;
+}
+
+.Publications-Click {
+    font-family: 'Nutito-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 3px solid $yellow;
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    line-height: 1;
+    margin: 20px 0px 0px 0px;
+    padding: 1.2em 2.0em;
+    text-align: center;
+    color: $yellow;
+    max-width: 200px;
+}
+
+  .Publications-Click:focus {
+    outline: 0;
+  }
+  
+  .Publications-Click {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+
+ 
+ @media (min-width: 900px) {
+    .PublicationsItem:hover {
+        -webkit-box-shadow: -1px 2px 47px 12px rgba(255, 242, 0, 0.2);
+        -moz-box-shadow: -1px 2px 47px 12px rgba(255, 242, 0, 0.2);
+        box-shadow: -1px 2px 47px 12px rgba(255, 242, 0, 0.2);
+        transform: translateY(-3px);
+     }
+
+     .PublicationsItem:hover .Publications-Click{
+        color: $purple;
+        outline: 0;
+        box-shadow: 0 0 40px 40px $yellow inset;
+        border: 3px solid $yellow ;
+      }
+ }
