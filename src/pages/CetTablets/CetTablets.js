@@ -12,6 +12,7 @@ import { Title } from "../../helpers/Title";
 import { Questions } from "../../helpers/components/Questions";
 import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf";
 import { DosageUsage } from "../../helpers/components/DosageUsage";
+import { Publications } from "../../components/Publications";
 
 export const CetTablets = () => {
     return(
@@ -52,6 +53,7 @@ export const CetTablets = () => {
                 </div>
             </div>
             <Questions />
+            <Publications />
         </div>
     );
 };
