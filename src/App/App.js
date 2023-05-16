@@ -6,7 +6,7 @@ import { CetTablets } from '../pages/CetTablets';
 import { Layout } from '../pages/Layout';
 import { EatJournalRools } from '../pages/EatJournalRools';
 import { CetDrops } from '../pages/CetDrops';
-import { One } from '../pages/Publications/One';
+import { Post1 } from '../pages/Publications/Posts/Post1';
 
 export const App = () => {
   return (
@@ -15,10 +15,10 @@ export const App = () => {
         <Route path='/' element={<Layout />}>
 
           <Route index element={<Home />} />
-          <Route path='/Food-Diary-Rools' element={<EatJournalRools />} />
+          <Route path='/EatJournal/Food-Diary-Rools' element={<EatJournalRools />} />
           <Route path='Tablets' element={<CetTablets />} />
           <Route path='Drops' element={<CetDrops />} />
-          <Route path='/Publications/One' element={<One />} />
+          <Route path='/Publications/1' element={<Post1 />} />
 
         </Route>
       </Routes>
