@@ -11,7 +11,6 @@ export const LinkButton = ({ButtonText, linkWay}) => {
         <Link onClick={scrollTop}
         className="LinkButton"
         to={linkWay}
-        preventScrollReset="true"
         >
             {ButtonText}
         </Link>

@@ -10,7 +10,7 @@ export const RoolsWrapper = () => {
             <div className="Rools-Wrapper-Text">
             При вводе в рацион новых ингредиентов – особое внимание к заполнению дневника. Для этого есть несколько простых правил и рекомендаций.
             </div>
-            <LinkButton linkWay="/Food-Diary-Rools" ButtonText="Подробнее" />
+            <LinkButton linkWay="/EatJournal/Food-Diary-Rools" ButtonText="Подробнее" />
         </div>
     );
 };

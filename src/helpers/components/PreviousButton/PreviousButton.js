@@ -1,12 +1,16 @@
 import "./PreviousButton.scss"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-export const PreviousButton = ({linkWay}) => {
+export const PreviousButton = () => {
+    
+    const navigate = useNavigate();
+
+    const goBack = () => navigate(-1);
+    
     return(
         <Link
         className="PreviousButton"
-        to={linkWay}
-        preventScrollReset={true}
+        onClick={goBack}
         >
             Назад
         </Link>
