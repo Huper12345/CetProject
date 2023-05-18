@@ -3,6 +3,7 @@ import { Intro } from "../../components/Intro";
 import { Header } from "../../components/Header";
 import { LekItem } from '../../components/Intro/LekItem';
 import { Preview } from '../../components/Intro/Preview';
+import { Footer } from "../../components/Footer";
 import TabPack from "../../helpers/Images/Packs/Tab3.png"
 import TabPack2 from "../../helpers/Images/Packs/kaplip5.png"
 import ChildMarker from "../../helpers/Images/Markers/son2.png"
@@ -37,6 +38,7 @@ export const Home = () => {
                         />
                     </div>
             </Intro>
+            <Footer />
         </div>
     )
 };

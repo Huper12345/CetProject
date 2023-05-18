@@ -52,6 +52,28 @@ code {
 
 .section {
   padding: 35px 0;
-  background-color: var(--white);
+}
+
+// ScrollBar
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, $purple, $darkviolet);
+}
+
+html,
+body {
+  scrollbar-color: $darkviolet $white; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin;
 }
 

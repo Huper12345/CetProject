@@ -13,6 +13,7 @@ import { Questions } from "../../helpers/components/Questions";
 import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf";
 import { DosageUsage } from "../../helpers/components/DosageUsage";
 import { Publications } from "../../components/Publications";
+import { Footer } from "../../components/Footer";
 
 export const CetTablets = () => {
     return(
@@ -54,6 +55,7 @@ export const CetTablets = () => {
             </div>
             <Questions />
             <Publications />
+            <Footer />
         </div>
     );
 };
