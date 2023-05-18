@@ -1,3 +1,6 @@
+@import "../../../helpers/colors/colors.scss";
+@import "../../../helpers/fonts/fonts.scss";
+
 .Post-Wrapper {
     padding-top: 100px;
 }
@@ -13,10 +16,27 @@
 .Post-Image {
     display: block;
     max-width: 800px;
+    margin-top: 40px;
 }
 
 .Post-Text {
     text-align: left;
     max-width: 800px;
     margin-top: 30px;
+}
+
+.Post-Title {
+    font-family: 'Nutito-Regular';
+    font-style: normal;
+    font-weight: 400;
+    color: $darkviolet;
+    margin: 20px 0px;
+    font-size: 28px;
+}
+
+.Post-Paragraph {
+    font-family: 'Nutito-Light';
+    font-style: normal;
+    font-weight: 300;
+    color: $darkviolet;
 }

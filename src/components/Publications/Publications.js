@@ -21,8 +21,8 @@ export const Publications = () => {
                     <PublicationsItem 
                     srcImage={Image} 
                     alt="Publication1Image"
-                    pTitle="Цетиризин помогает от всего" 
-                    pPreviewText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem..."
+                    pTitle="Как облегчить аллергию весной?" 
+                    pPreviewText="Для многих людей весенние солнечные дни омрачаются чиханьем, кашлем..."
                     href="/Publications/2"
                     />
                 </div>
