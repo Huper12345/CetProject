@@ -7,6 +7,8 @@ import { Title } from "../../helpers/Title";
 import { EatJournal } from "../../helpers/components/EatJournal";
 import { Questions } from "../../helpers/components/Questions";
 import { DosageUsage } from "../../helpers/components/DosageUsage";
+import { Footer } from "../../components/Footer";
+import { Publications } from "../../components/Publications";
 import Zaec from "../../helpers/Images/Intro/zaec.png"
 import DropsPack from "../../helpers/Images/Packs/kaplip7.png"
 import BabyMarker from "../../helpers/Images/Markers/baby-boy1.png"
@@ -56,6 +58,8 @@ export const CetDrops = () => {
                 </div>
             </div>
             <Questions />
+            <Publications />
+            <Footer />
         </div>
     );
 };

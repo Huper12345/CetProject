@@ -1,9 +1,11 @@
 import "./PublicationsItem.scss"
 import {Link} from 'react-router-dom';
 
+
 export const PublicationsItem = ({srcImage, alt, pTitle, pPreviewText, href}) => {
+    
     return(
-        <Link 
+        <Link
         to={href}
         className="PublicationsItem"
         >

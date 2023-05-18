@@ -2,6 +2,7 @@ import "./Publications.scss"
 import { Title } from "../../helpers/Title";
 import { PublicationsItem } from "./PublicationsItem";
 import Image from "../../helpers/Images/Publications/1/photo1.png"
+import Image2 from "../../helpers/Images/Posts/post2.jpg"
 
 
 
@@ -19,10 +20,10 @@ export const Publications = () => {
                     href="/Publications/1"
                     />
                     <PublicationsItem 
-                    srcImage={Image} 
+                    srcImage={Image2} 
                     alt="Publication1Image"
-                    pTitle="Цетиризин помогает от всего" 
-                    pPreviewText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem..."
+                    pTitle="Как облегчить аллергию весной?" 
+                    pPreviewText="Для многих людей весенние солнечные дни омрачаются чиханьем, кашлем..."
                     href="/Publications/2"
                     />
                 </div>
