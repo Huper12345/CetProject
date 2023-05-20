@@ -1,7 +1,7 @@
 import React from "react";
 import "./Logo.scss";
 import LogoT from "../../../helpers/Images/Logo/logoCET2.webp";
-import { Link, animateScroll as scroll } from "react-scroll";
+import {Link} from "react-router-dom";
 
 
 export const Logo = () => {
@@ -9,9 +9,7 @@ export const Logo = () => {
     <div className="Logo">
       <Link
         className="Logo-Link"
-        smooth={true}
-        offset={-70}
-        duration={600}
+        to="/"
       >
         <img
           src={LogoT}

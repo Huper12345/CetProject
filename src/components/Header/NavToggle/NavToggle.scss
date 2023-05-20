@@ -1,0 +1,122 @@
+@import "../../../helpers/colors/colors.scss";
+@import "../../../helpers/fonts/fonts.scss";
+
+.Nav-Toggle-Container {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 100%;
+  display: none;
+}
+
+.Toggle-Button-Container {
+  position: absolute;
+  right: 35px;
+}
+
+.Nav-Toggle-Button.active {
+  background: none;
+  bottom: 16px;
+}
+
+.Nav-Toggle-Button.active::after {
+  transform: rotate(-45deg);
+  bottom: 0px;
+}
+
+.Nav-Toggle-Button.active::before {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.Nav-Toggle-Button {
+  cursor: pointer;
+
+  max-width: 100%;
+  user-select: none;
+  position: relative;
+  border: 0;
+  font-size: 0;
+  color: inherit;
+  background-color: $yellow;
+  width: 33px;
+  height: 3px;
+}
+
+.Nav-Toggle-Button::after {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 3px;
+  bottom: 10px;
+  right: 0;
+  position: absolute;
+  background-color: $yellow;
+}
+
+.Nav-Toggle-Button::before {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 3px;
+  top: 10px;
+  right: 0;
+  position: absolute;
+  background-color: $yellow;
+}
+
+.Nav-Toggle-Button.active {
+  color: $yellow;
+}
+
+.Toggle-Menu {
+  font-size: 21px;
+  font-family: "Nutito-Light";
+  font-weight: 300;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  user-select: none;
+  background-color: $lightrose;
+  background-image: linear-gradient(326deg, $darkviolet 0%, $purple 74%);
+  padding: 10px 10px;
+  height: 100%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.Toggle-Menu-Item {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+  text-align: left;
+  padding: 3px 20px;
+  color: $yellow;
+  margin-bottom: 11px;
+  text-decoration: none;
+  position: relative;
+}
+
+@media (max-width: 899px) {
+  .Nav-Toggle-Container {
+    display: block;
+  }
+}
+
+@media (max-width: 341px) {
+  .Toggle-Menu-Item {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 328px) {
+  .Toggle-Menu-Item {
+    font-size: 23px;
+  }
+}
+
+@media (max-height: 500px) {
+  .Toggle-Menu-Item {
+    font-size: 18px;
+  }
+}

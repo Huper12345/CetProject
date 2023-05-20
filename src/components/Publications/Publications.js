@@ -11,7 +11,7 @@ export const Publications = () => {
         <div className="section">
             <div className="container">
                 <Title TitleText="Полезные материалы" />
-                <div className="Publications-Inner">
+                <div id="Publications" className="Publications-Inner">
                     <PublicationsItem 
                     srcImage={Image} 
                     alt="Publication1Image"
