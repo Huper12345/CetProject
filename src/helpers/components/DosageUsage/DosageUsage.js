@@ -8,7 +8,7 @@ import { InstructionButton } from "./InstructionButton";
 
 export const DosageUsage = ({MainText, subtext1, subtext2, href}) => {
     return(
-        <div className="DosageUsage">
+        <div id="DosageUsage" className="DosageUsage">
             <div className="section">
                 <div className="container">
                     <Title TitleText="Применение и дозировка" TitleColor="Title-Text yellow" />

@@ -6,7 +6,7 @@ import { RoolsWrapper } from "../../../pages/EatJournalRools/RoolsWrapper";
 
 export const EatJournal = ({FoodDiary}) => {
     return(
-        <div className="EatJournal">
+        <div id="EatJournal" className="EatJournal">
                 <div className="EatJournal-Inner">
                     <div className="EatJournal-Content">
                         <h3 className="EatJournal-Title">

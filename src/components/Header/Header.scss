@@ -8,6 +8,8 @@
     font-size: 30px;
     background-color: $lightrose;
     background-image: linear-gradient(326deg, $darkviolet 0%, $purple 74%);
+    z-index: 2000;
+    min-height: 70px;
 
     position: absolute;
     width: 100%;
@@ -17,4 +19,111 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
+
+.Nav-Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Nav-Wrapper.active {
+    display: block;
+}
+
+// NavToggle
+
+.Nav-Toggle-Button {
+    color: $white;
+    font-size: 0;
+    background-color: inherit;
+    position: relative;
+    border: 0;
+    outline: 0;
+    width: 30px;
+    height: 3px;
+    background-color: $yellow;
+    cursor: pointer;
+}
+
+.Nav-Toggle-Button.active {
+    background-color: inherit;
+}
+
+.Nav-Toggle-Button.active::before {
+    transform: rotate(45deg);
+}
+
+.Nav-Toggle-Button.active::after {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
+
+
+.Nav-Toggle-Button::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: $yellow;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.Nav-Toggle-Button::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: $yellow;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.Nav-Toggle-Container {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    z-index: 2500;
+}
+
+
+@media (max-width: 899px) {
+    .Nav-Toggle-Container {
+        display: block;
+    }
+}
+
+@media (min-width: 900px) {
+    .Nav-Toggle-Container {
+        display: none;
+    }
+
+    .Nav-Wrapper.active {
+        display: none;
+    }
+
+}
+
+@media (max-width: 899px) {
+    .Nav-Wrapper {
+        display: none;
+    }
+
+    .Nav-Position {
+        display: flex;
+        align-items: center;
+    }
+
+    .Header-inner {
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+  }

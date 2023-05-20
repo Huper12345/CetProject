@@ -27,3 +27,11 @@
 .Nav-link:hover {
     color: $blue;
 }
+
+@media (max-width: 899px) {
+    .Nav-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+  }
