@@ -4,7 +4,13 @@ import { Nav } from './Nav';
 import { NavDrop } from './NavDrop';
 import { NavToggle } from './NavToggle';
 
-export const Header = ({BuyButtonStatus, BuyButtonHref}) => {
+export const Header = ({
+    BuyButtonStatus,
+    BuyButtonHref, 
+    MobileBuyLink="#", 
+    ToggleBuyButton="ToggleBuyButton-Hide",
+    NavDropMobileStatus="NavMobile-Hide",
+    }) => {
     
     return (
         <div className="Header">
@@ -33,7 +39,11 @@ export const Header = ({BuyButtonStatus, BuyButtonHref}) => {
                             hrefBuy={BuyButtonHref}
                             />
                         </div>
-                        <NavToggle />
+                        <NavToggle
+                        Mobilehref={MobileBuyLink}
+                        ToggleBuyButton={ToggleBuyButton}
+                        NavDropMobileStatus={NavDropMobileStatus} 
+                        />
                     </div>
                 </div>
             </div>

@@ -2,9 +2,15 @@ import React from "react";
 import { useState } from "react";
 import "./NavToggle.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
-import { NavDropMobile } from "../NavDropMobile/NavDropMobile";
+import { NavDropMobile } from "./NavDropMobile";
 
-export const NavToggle = () => {
+export const NavToggle = (
+{
+Mobilehref="#",
+ToggleBuyButton="Toggle-Menu-Item",
+NavDropMobileStatus="NavMobile",
+}  
+) => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -40,16 +46,16 @@ export const NavToggle = () => {
             href3='Questions'
             droptext4="Полезные материалы"
             href4="Publications"
+            NavMobileStatus={NavDropMobileStatus}
             
             />
           </Link>
 
           <a
-            href="https://tabletka.by/result?ls=21024"
-            className="Toggle-Menu-Item"
+            href={Mobilehref}
+            className={ToggleBuyButton}
             target="blank"
           >
-            {" "}
             Где купить?
           </a>
           <Link

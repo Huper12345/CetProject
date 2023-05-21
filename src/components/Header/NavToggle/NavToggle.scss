@@ -97,6 +97,10 @@
   position: relative;
 }
 
+.ToggleBuyButton-Hide {
+  display: none;
+}
+
 @media (max-width: 899px) {
   .Nav-Toggle-Container {
     display: block;

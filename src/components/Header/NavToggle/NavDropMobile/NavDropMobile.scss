@@ -1,5 +1,5 @@
-@import "../../../helpers//fonts/fonts.scss";
-@import "../../../helpers/colors/colors.scss";
+@import "../../../../helpers/fonts/fonts.scss";
+@import "../../../../helpers/colors/colors.scss";
 
 
 
@@ -8,6 +8,10 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+}
+
+.NavMobile-Hide {
+  display: none;
 }
 
 .NavMobile-Button {

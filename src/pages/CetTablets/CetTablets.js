@@ -21,6 +21,9 @@ export const CetTablets = () => {
             <Header 
             BuyButtonStatus="Nav-link"
             BuyButtonHref="https://tabletka.by/result?ls=21211"
+            MobileBuyLink="https://tabletka.by/result?ls=21211"
+            ToggleBuyButton="Toggle-Menu-Item"
+            NavDropMobileStatus="NavMobile"
             />
             <Intro 
             className="Intro-Inner-Tab"
