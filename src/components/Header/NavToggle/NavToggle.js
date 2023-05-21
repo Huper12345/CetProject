@@ -49,13 +49,13 @@ NavDropMobileDropLink4="#",
             <NavDropMobile 
             buttonText={NavDropMobileButtonText}
             droptext={NavDropMobileDropText1}
-            href1='DosageUsage'
-            droptext2="Пищевой дневник"
-            href2='EatJournal'
-            droptext3="Вопросы"
-            href3='Questions'
-            droptext4="Полезные материалы"
-            href4="Publications"
+            href1={NavDropMobileDropLink1}
+            droptext2={NavDropMobileDropText2}
+            href2={NavDropMobileDropLink2}
+            droptext3={NavDropMobileDropText3}
+            href3={NavDropMobileDropLink3}
+            droptext4={NavDropMobileDropText4}
+            href4={NavDropMobileDropLink4}
             NavMobileStatus={NavDropMobileStatus}
             
             />
