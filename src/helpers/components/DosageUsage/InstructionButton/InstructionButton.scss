@@ -29,6 +29,10 @@
     max-width: 260px;
 }
 
+.Instruction-Button.Hide {
+  display: none;
+}
+
 .Instruction-Button:hover {
     color: $purple;
     outline: 0;

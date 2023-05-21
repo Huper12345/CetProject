@@ -65,7 +65,9 @@ export const CetDrops = () => {
             </div>
             <Questions />
             <Publications />
-            <Footer />
+            <Footer 
+            InstructionLink="https://www.rceth.by/NDfiles/instr/19_07_2952_s.pdf"
+            />
         </div>
     );
 };

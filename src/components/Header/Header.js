@@ -45,7 +45,7 @@ export const Header = ({
                             mainText='Главная'
                             main='/'
                             text2='Контакты'
-                            href2='#'
+                            href2='Footer'
                             BuyButton={BuyButtonStatus}
                             hrefBuy={BuyButtonHref}
                             />

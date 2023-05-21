@@ -61,7 +61,9 @@ export const CetTablets = () => {
             </div>
             <Questions />
             <Publications />
-            <Footer />
+            <Footer 
+            InstructionLink="https://www.rceth.by/NDfiles/instr/20_12_3093_s.pdf"
+            />
         </div>
     );
 };

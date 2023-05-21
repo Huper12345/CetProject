@@ -38,7 +38,9 @@ export const Home = () => {
                         />
                     </div>
             </Intro>
-            <Footer />
+            <Footer
+            InstructionButtonStatus="Instruction-Button Hide"
+            />
         </div>
     )
 };

@@ -1,0 +1,35 @@
+@import "../../../helpers/fonts/fonts.scss";
+@import "../../../helpers/colors/colors.scss";
+
+.Footer-Nav {
+  margin-right: 20px;
+  max-width: 300px;
+}
+
+.Footer-Nav-Link {
+  display: block;
+  font-size: 23px;
+  font-family: 'Nutito-Light';
+  font-style: normal;
+  font-weight: 300;
+  text-align: left;
+  color: $yellow;
+  margin: 5px 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+
+@media (min-width: 989px) {
+  .Footer-Nav-Link:hover {
+    color: $blue;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 734px) {
+  .Footer-Nav-Link {
+    font-size: 17px;
+  }
+}
