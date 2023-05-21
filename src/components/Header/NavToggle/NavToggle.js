@@ -9,6 +9,16 @@ export const NavToggle = (
 Mobilehref="#",
 ToggleBuyButton="Toggle-Menu-Item",
 NavDropMobileStatus="NavMobile",
+NavDropMobileButtonText="#",
+NavDropMobileDropText1="#",
+NavDropMobileDropLink1="#",
+NavDropMobileDropText2="#",
+NavDropMobileDropLink2="#",
+NavDropMobileDropText3="#",
+NavDropMobileDropLink3="#",
+NavDropMobileDropText4="#",
+NavDropMobileDropLink4="#",
+
 }  
 ) => {
   const [open, setOpen] = useState(false);
@@ -37,8 +47,8 @@ NavDropMobileStatus="NavMobile",
             className="Toggle-Menu-Item"
           >
             <NavDropMobile 
-            buttonText="Препарат"
-            droptext="Применение/дозировка"
+            buttonText={NavDropMobileButtonText}
+            droptext={NavDropMobileDropText1}
             href1='DosageUsage'
             droptext2="Пищевой дневник"
             href2='EatJournal'
