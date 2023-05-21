@@ -14,6 +14,7 @@ export const NavDropMobile = ({
   href3,
   droptext4, 
   href4,
+  NavMobileStatus="NavMobile",
   Style="NavMobile-Button"}) => {
     const [open, setOpen] = useState(false);
 
@@ -27,7 +28,7 @@ export const NavDropMobile = ({
   
 
     return (
-      <div className="NavMobile">
+      <div className={NavMobileStatus}>
         <button
           className={open ? 'NavMobile-Button active' : Style}
           onClick={handleOpen}

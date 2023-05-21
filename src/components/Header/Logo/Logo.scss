@@ -1,10 +1,39 @@
+@import "../../../helpers/colors/colors.scss";
+@import "../../../helpers/fonts/fonts.scss";
+
 .Logo-Img {
   display: block;
   max-width: 150px;
   height: auto;
   cursor: pointer;
   position: absolute;
+}
+
+.Logo-Text {
+  font-family: 'Nutito-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  position: absolute;
+  left: 60px;
+  top: 8px;
+  color: $dirtyyellow;
+  transition: 0.2s;
+}
+
+.Logo-Link {
+  text-decoration: none;
+  position: absolute;
   left: 0;
   top: 10px;
 }
 
+.Logo-Link-Inner {
+  position: relative;
+}
+
+@media (min-width: 900px) {
+  .Logo-Link:hover .Logo-Text {
+    color: $blue;
+   }
+}

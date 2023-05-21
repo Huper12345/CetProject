@@ -1,0 +1,36 @@
+@import "../../../helpers/fonts/fonts.scss";
+@import "../../../helpers/colors/colors.scss";
+
+.Contacts-Container {
+  max-width: 700px;
+  margin-top: 67px;
+  text-align: left;
+}
+
+.Contacts-Title {
+  font-family: 'Nutito-Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: $yellow;
+  margin-bottom: 20px;
+}
+
+.Contacts-Subtext {
+  font-family: 'Nutito-Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: $yellow;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 734px) {
+  .Contacts-Title {
+    font-size: 16px;
+  }
+
+  .Contacts-Subtext {
+    font-size: 16px;
+  }
+}

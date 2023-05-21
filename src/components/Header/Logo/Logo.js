@@ -11,13 +11,18 @@ export const Logo = () => {
         className="Logo-Link"
         to="/"
       >
-        <img
-          src={LogoT}
-          alt="Logo"
-          className="Logo-Img"
-          width="50px"
-          height="50px"
-        ></img>
+        <div className="Logo-Link-Inner">
+          <img
+            src={LogoT}
+            alt="Logo"
+            className="Logo-Img"
+            width="50px"
+            height="50px"
+          ></img>
+          <div className="Logo-Text">
+            Цетиризин
+          </div>
+        </div>
       </Link>
     </div>
   );

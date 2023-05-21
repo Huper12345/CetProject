@@ -9,6 +9,7 @@ import { Questions } from "../../helpers/components/Questions";
 import { DosageUsage } from "../../helpers/components/DosageUsage";
 import { Footer } from "../../components/Footer";
 import { Publications } from "../../components/Publications";
+import { TopButton } from "../../helpers/components/TopButton";
 import Zaec from "../../helpers/Images/Intro/zaec.png"
 import DropsPack from "../../helpers/Images/Packs/kaplip7.png"
 import BabyMarker from "../../helpers/Images/Markers/baby-boy1.png"
@@ -23,7 +24,12 @@ export const CetDrops = () => {
             <Header
             BuyButtonStatus="Nav-link"
             BuyButtonHref="https://tabletka.by/result?ls=20070"
+            MobileBuyLink="https://tabletka.by/result?ls=20070"
+            ToggleBuyButton="Toggle-Menu-Item"
+            NavDropMobileStatus="NavMobile"
+            NavDropStatus="NavDrop"
             />
+            <TopButton />
             <Intro 
             className="Intro-Inner-Tab"
             className2="Intro Tab"
@@ -59,7 +65,9 @@ export const CetDrops = () => {
             </div>
             <Questions />
             <Publications />
-            <Footer />
+            <Footer 
+            InstructionLink="https://www.rceth.by/NDfiles/instr/19_07_2952_s.pdf"
+            />
         </div>
     );
 };

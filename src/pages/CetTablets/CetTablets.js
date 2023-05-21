@@ -14,6 +14,7 @@ import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf";
 import { DosageUsage } from "../../helpers/components/DosageUsage";
 import { Publications } from "../../components/Publications";
 import { Footer } from "../../components/Footer";
+import { TopButton } from "../../helpers/components/TopButton";
 
 export const CetTablets = () => {
     return(
@@ -21,7 +22,12 @@ export const CetTablets = () => {
             <Header 
             BuyButtonStatus="Nav-link"
             BuyButtonHref="https://tabletka.by/result?ls=21211"
+            MobileBuyLink="https://tabletka.by/result?ls=21211"
+            ToggleBuyButton="Toggle-Menu-Item"
+            NavDropMobileStatus="NavMobile"
+            NavDropStatus="NavDrop"
             />
+            <TopButton />
             <Intro 
             className="Intro-Inner-Tab"
             className2="Intro Tab">
@@ -55,7 +61,9 @@ export const CetTablets = () => {
             </div>
             <Questions />
             <Publications />
-            <Footer />
+            <Footer 
+            InstructionLink="https://www.rceth.by/NDfiles/instr/20_12_3093_s.pdf"
+            />
         </div>
     );
 };
