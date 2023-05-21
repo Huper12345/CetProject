@@ -23,7 +23,7 @@ export const Header = ({
     }) => {
     
     return (
-        <div className="Header">
+        <div id="Header" className="Header">
             <div className='container'>
                 <div className='Header-inner'>
                     <Logo />

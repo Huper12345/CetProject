@@ -14,6 +14,7 @@ import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf";
 import { DosageUsage } from "../../helpers/components/DosageUsage";
 import { Publications } from "../../components/Publications";
 import { Footer } from "../../components/Footer";
+import { TopButton } from "../../helpers/components/TopButton";
 
 export const CetTablets = () => {
     return(
@@ -26,6 +27,7 @@ export const CetTablets = () => {
             NavDropMobileStatus="NavMobile"
             NavDropStatus="NavDrop"
             />
+            <TopButton />
             <Intro 
             className="Intro-Inner-Tab"
             className2="Intro Tab">

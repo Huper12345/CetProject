@@ -28,11 +28,12 @@
   top: 10px;
 }
 
-.Logo-Link:hover .Logo-Text {
- color: $blue;
-}
-
 .Logo-Link-Inner {
   position: relative;
 }
 
+@media (min-width: 900px) {
+  .Logo-Link:hover .Logo-Text {
+    color: $blue;
+   }
+}
