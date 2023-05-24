@@ -10,8 +10,8 @@ import { DosageUsage } from "../../helpers/components/DosageUsage";
 import { Footer } from "../../components/Footer";
 import { Publications } from "../../components/Publications";
 import { TopButton } from "../../helpers/components/TopButton";
-import Zaec from "../../helpers/Images/Intro/zaec.png"
-import DropsPack from "../../helpers/Images/Packs/kaplip7.png"
+import Zaec from "../../helpers/Images/Intro/zaec.webp"
+import DropsPack from "../../helpers/Images/Packs/kaplip7.webp"
 import BabyMarker from "../../helpers/Images/Markers/baby-boy1.png"
 import DropsMarker from "../../helpers/Images/Markers/water-drop.png"
 import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf"

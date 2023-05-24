@@ -1,6 +1,7 @@
 import "./Questions.scss"
 import { Title } from "../../Title";
 import { Advantages } from "../Advantages";
+import { DoctorQuestion } from "../DoctorQuestion";
 
 export const Questions = () => {
     return(
@@ -24,6 +25,9 @@ export const Questions = () => {
                         buttonText="Какую выбрать лекарственную форму?"
                         droptext="Цетиризин это препарат нового поколения против аллергии"
                         />
+                        <div className="Doctor-Question-Container">
+                            <DoctorQuestion />
+                        </div>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import './LekItem.scss';
-import Mishkaz from "./images/mishkaz.png"
+import Mishkaz from "./images/mishkaz.webp"
 import {Link} from 'react-router-dom';
 
 

@@ -1,8 +1,10 @@
+@import "../../helpers/colors/colors.scss";
+@import "../../helpers/fonts/fonts.scss";
 
 .Intro {
     height: 100vh;
     width: 100%;
-    background: url("../../helpers/Images/Intro/introImage.png") center no-repeat;
+    background: url("../../helpers/Images/Intro/introImage.webp") center no-repeat;
     background-size: cover;
     padding-top: 67px;
     min-height: 700px;

@@ -1,5 +1,5 @@
 import "./EatJournal.scss"
-import FoodJ from "./Images/foodJournal5.png"
+import FoodJ from "./Images/foodJournal5.webp"
 import { SendMail } from "./SendMail";
 import { RoolsWrapper } from "../../../pages/EatJournalRools/RoolsWrapper";
 
