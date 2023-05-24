@@ -1,6 +1,6 @@
 import React from "react";
 import "./LogoBorimed.scss";
-import LogoFooter from "./Images/logoBorimed.png";
+import LogoFooter from "./Images/logoBorimed2.webp";
 
 export const LogoBorimed = () => {
   return (

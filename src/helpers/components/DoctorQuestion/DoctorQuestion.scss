@@ -1,0 +1,169 @@
+@import "../../fonts/fonts.scss";
+@import "../../colors/colors.scss";
+
+
+.Doctor-Img {
+  display: block;
+  max-width: 600px;
+  height: auto;
+}
+
+.Doctor-Question-Image-Container {
+  width: 50%;
+}
+
+.Doctor-Question-Content {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Doctor-Question-Title {
+  font-family: 'Nutito-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: $yellow;
+  margin-bottom: 40px;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+.Doctor-Description {
+  font-family: 'Nutito-Light';
+  font-style: normal;
+  font-weight: 300;
+  color: $darkviolet;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+  background-color: $yellow;
+}
+
+.DoctorQuestion-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.Doctor-Question-Inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Question-Form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 100%;
+}
+
+.Question-Input {
+  font-family: 'Nutito-Light';
+  font-style: normal;
+  font-weight: 300;
+  width: 100%;
+  font-style: normal;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  border: 3px solid $white;
+  background-color: $white;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Question-Input::placeholder {
+  color: $darkviolet;
+  font-family: 'Nutito-Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.Question-Input:focus {
+  outline: 0;
+  border: 3px solid $yellow;
+}
+
+
+.Question-Message {
+  font-family: 'Nutito-Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  resize: vertical;
+  height: 100%;
+  min-height: 200px;
+  padding: 10px 10px 10px 10px;
+  color: $darkviolet;
+  border: 3px solid $white;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.Question-Message::placeholder {
+  color: $darkviolet;
+  font-family: 'Nutito-Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.Question-Message:focus {
+  border: 3px solid $yellow;
+  outline: 0;
+}
+
+
+.Doctor-Question-Button {
+  font-family: 'Nutito-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 3px solid $yellow;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  line-height: 1;
+  margin: 50px 0px 0px 0px;
+  padding: 1.2em 2.0em;
+  text-decoration: none;
+  text-align: center;
+  color: $yellow;
+  max-width: 260px;
+}
+
+.Doctor-Question-Button:hover {
+  color: $purple;
+  outline: 0;
+  box-shadow: 0 0 40px 40px $yellow inset;
+  border: 3px solid $yellow ;
+}
+
+.Doctor-Question-Button:focus {
+  outline: 0;
+}
+
+.Doctor-Question-Button {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
