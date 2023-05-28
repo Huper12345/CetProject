@@ -97,6 +97,9 @@
     .Nav-Toggle-Container {
         display: block;
     }
+    .Header {
+        position: fixed;
+    }
 }
 
 @media (min-width: 900px) {

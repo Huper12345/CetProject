@@ -1,8 +1,10 @@
 import "../Post.scss"
 import { Header } from "../../../../components/Header";
 import { PreviousButton } from "../../../../helpers/components/PreviousButton";
-import Post2Image from "../../../../helpers/Images/Posts/post2.jpg"
+import Post2Image from "../../../../helpers/Images/Posts/post2.webp"
 import {Title} from "../../../../helpers/Title"
+import { Footer } from "../../../../components/Footer";
+import { TopButton } from "../../../../helpers/components/TopButton";
 
 
 export const Post2 = () => {
@@ -30,6 +32,7 @@ export const Post2 = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

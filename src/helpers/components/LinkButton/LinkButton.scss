@@ -46,3 +46,10 @@
     box-shadow: 0 0 40px 40px $darkviolet inset;
     border: 3px solid $darkviolet ;
   }
+
+  @media (max-width: 400px) {
+   .LinkButton {
+    margin: 20px 0;
+    padding: 1.2em 2.0em;
+   }
+ }

@@ -28,7 +28,7 @@ export const TopButton = () => {
   return (
     <Link 
     className={classes}
-    to="Header"
+    to="Intro"
     smooth={true}
     offset={-70}
     duration={600}

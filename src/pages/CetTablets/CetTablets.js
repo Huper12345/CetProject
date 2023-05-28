@@ -5,8 +5,8 @@ import { LekItemTab } from "../../helpers/components/LekItemTab";
 import { IntroImage } from "../../helpers/components/IntroImage";
 import { EatJournal } from "../../helpers/components/EatJournal";
 import TabPack2 from "../../helpers/Images/Packs/Tab2.webp"
-import ChildMarker from "../../helpers/Images/Markers/son2.png"
-import pills from "../../helpers/Images/Markers/pills.png"
+import ChildMarker from "../../helpers/Images/Markers/son2.webp"
+import pills from "../../helpers/Images/Markers/pills.webp"
 import Mishka from "../../helpers/Images/Intro/mishka2.webp"
 import { Title } from "../../helpers/Title";
 import { Questions } from "../../helpers/components/Questions";

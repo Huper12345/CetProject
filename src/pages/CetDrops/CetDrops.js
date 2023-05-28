@@ -12,8 +12,8 @@ import { Publications } from "../../components/Publications";
 import { TopButton } from "../../helpers/components/TopButton";
 import Zaec from "../../helpers/Images/Intro/zaec.webp"
 import DropsPack from "../../helpers/Images/Packs/kaplip7.webp"
-import BabyMarker from "../../helpers/Images/Markers/baby-boy1.png"
-import DropsMarker from "../../helpers/Images/Markers/water-drop.png"
+import BabyMarker from "../../helpers/Images/Markers/baby-boy1.webp"
+import DropsMarker from "../../helpers/Images/Markers/water-drop.webp"
 import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf"
 
 

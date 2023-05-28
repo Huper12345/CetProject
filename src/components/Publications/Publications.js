@@ -1,8 +1,8 @@
 import "./Publications.scss"
 import { Title } from "../../helpers/Title";
 import { PublicationsItem } from "./PublicationsItem";
-import Image from "../../helpers/Images/Publications/1/photo1.png"
-import Image2 from "../../helpers/Images/Posts/post2.jpg"
+import Image from "../../helpers/Images/Posts/post1.webp"
+import Image2 from "../../helpers/Images/Posts/post2.webp"
 
 
 

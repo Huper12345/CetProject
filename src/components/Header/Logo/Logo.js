@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 export const Logo = () => {
   return (
-    <div className="Logo">
+    <div className="Logo" id="Logo">
       <Link
         className="Logo-Link"
         to="/"

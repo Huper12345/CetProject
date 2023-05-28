@@ -83,4 +83,13 @@
   font-weight: 300;
 }
 
+@media (max-width: 426px) {
+  .Advantages-Button {
+    font-size: 20px;
+  }
 
+  .Advantages-Button.active {
+    font-size: 20px;
+  }
+  
+}

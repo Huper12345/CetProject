@@ -63,3 +63,56 @@
 .Dialog-Buble.active {
     opacity: 1;
 }
+
+@media (max-width: 1050px) {
+    .IntroImage-Wrapper {
+       position: relative;
+       left: 0;
+       width: 60%;
+       margin-bottom: 50px;
+    }
+
+    .IntroImage {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .Dialog-Buble {
+        font-size: 16px;
+        width: 180px;
+        height: 100px;
+        left: -20px;
+        top: 30px;
+    }
+
+    .Dialog-Buble:before { 
+        left: 10px; 
+        top: 90px; 
+       
+    }
+
+    .IntroImage-Wrapper {
+        width: 80%;
+     }
+    
+}
+
+@media (max-width: 400px) {
+    .Dialog-Buble {
+        font-size: 14px;
+        width: 165px;
+        height: 100px;
+        left: -10px;
+        bottom: 10px;
+    }
+
+    .Dialog-Buble:before { 
+        left: 10px; 
+        top: 90px; 
+       
+    }
+    
+}
+
+

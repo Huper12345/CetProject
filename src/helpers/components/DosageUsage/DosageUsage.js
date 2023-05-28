@@ -1,6 +1,6 @@
 import "./DosageUsage.scss";
 import { Title } from "../../Title";
-import Baktery from "../../Images/DosageUsage/Baktery/umbrella.png"
+import Baktery from "../../Images/DosageUsage/Baktery/umbrella.webp"
 import { InstructionButton } from "./InstructionButton";
 
 

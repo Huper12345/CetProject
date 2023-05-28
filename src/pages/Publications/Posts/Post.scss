@@ -1,6 +1,13 @@
 @import "../../../helpers/colors/colors.scss";
 @import "../../../helpers/fonts/fonts.scss";
 
+.Post {
+    position: relative;
+    padding-bottom: 650px;
+    height: 100%;
+    overflow: hidden;
+}
+
 .Post-Wrapper {
     padding-top: 100px;
 }
@@ -40,3 +47,15 @@
     font-weight: 300;
     color: $darkviolet;
 }
+
+@media (max-width: 830px) {
+    .Post-Image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .Post {
+     padding-bottom: 750px;
+    }
+  }

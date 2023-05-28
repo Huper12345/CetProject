@@ -6,10 +6,10 @@ import { Preview } from '../../components/Intro/Preview';
 import { Footer } from "../../components/Footer";
 import TabPack from "../../helpers/Images/Packs/Tab3.webp"
 import TabPack2 from "../../helpers/Images/Packs/kaplip5.webp"
-import ChildMarker from "../../helpers/Images/Markers/son2.png"
-import pills from "../../helpers/Images/Markers/pills.png"
-import babymarker from "../../helpers/Images/Markers/baby-boy1.png"
-import dropMarker from "../../helpers/Images/Markers/water-drop.png"
+import ChildMarker from "../../helpers/Images/Markers/son2.webp"
+import pills from "../../helpers/Images/Markers/pills.webp"
+import babymarker from "../../helpers/Images/Markers/baby-boy1.webp"
+import dropMarker from "../../helpers/Images/Markers/water-drop.webp"
 
 export const Home = () => {
     return (

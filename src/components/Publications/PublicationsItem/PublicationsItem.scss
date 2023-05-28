@@ -113,3 +113,16 @@
         border: 3px solid $yellow ;
       }
  }
+
+ @media (max-width: 750px) {
+    .PublicationsItem {
+       width: 90%;
+       margin-top: 20px;
+    }
+      }
+
+@media (max-width: 400px) {
+    .Publications-Title {
+        font-size: 22px;
+    }
+}

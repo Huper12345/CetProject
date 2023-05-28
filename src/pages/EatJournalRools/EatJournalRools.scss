@@ -1,6 +1,14 @@
 @import "../../helpers/fonts/fonts.scss";
 @import "../../helpers/colors/colors.scss";
 
+
+.EatJournalRools {
+    position: relative;
+    padding-bottom: 650px;
+    height: 100%;
+    overflow: hidden;
+}
+
 .Eat-Rools-Wrapper {
     padding-top: 100px;
 }
@@ -89,3 +97,40 @@
     max-width: 30px;
     max-height: 30px;
 }
+
+@media (max-width: 550px) {
+    .CetDrops {
+     padding-bottom: 750px;
+    }
+
+    .Rools-Item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Rools-Img {
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+  }
+
+  @media (max-width: 900px) {
+    .Rools-Food-Content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Rools-Food-Item {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  }
+
+  @media (max-width: 500px) {
+    .EatJournalRools {
+     padding-bottom: 750px;
+    }
+  }
+  

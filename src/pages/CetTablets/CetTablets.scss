@@ -11,3 +11,9 @@
     height: 100%;
     overflow: hidden;
 }
+
+@media (max-width: 500px) {
+   .CetTablets {
+    padding-bottom: 750px;
+   }
+ }

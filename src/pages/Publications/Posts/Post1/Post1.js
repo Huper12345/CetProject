@@ -1,8 +1,9 @@
 import "../Post.scss"
 import { Header } from "../../../../components/Header";
 import { PreviousButton } from "../../../../helpers/components/PreviousButton";
-import Post1Image from "../../../../helpers/Images/Posts/post1.jpg"
+import Post1Image from "../../../../helpers/Images/Posts/post1.webp"
 import {Title} from "../../../../helpers/Title"
+import { Footer } from "../../../../components/Footer";
 
 
 export const Post1 = () => {
@@ -26,6 +27,7 @@ export const Post1 = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };
