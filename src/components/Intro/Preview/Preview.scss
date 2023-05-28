@@ -21,3 +21,9 @@
     background-color: $lightrose;
     background-image: linear-gradient(326deg, $darkviolet 0%, $purple 74%);
 }
+
+@media (max-width: 520px) {
+    .Preview-title {
+        font-size: 30px;
+    }
+}

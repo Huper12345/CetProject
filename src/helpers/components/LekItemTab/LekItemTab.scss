@@ -62,3 +62,46 @@
     background-image: linear-gradient(326deg, $darkviolet 0%, $purple 74%);
     opacity: 0.9;
 }
+
+@media (max-width: 1050px) {
+    .LekItem-Tab {
+        width: 60%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .LekItem-Tab {
+        width: 100%;
+        margin: 0px 30px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .LekItem-textWrapper-Tab {
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 426px) {
+    .LekItem-textWrapper-Tab {
+        width: 57%;
+        padding: 20px 20px 15px 10px;
+    }
+
+    .lekItem-img-Tab {
+        width: 70%;
+    }
+
+    .LekItem-text-Tab {
+        font-size: 20px;
+    }
+
+    .LekItem-marker-Tab {
+        height: 30px;
+    }
+
+    
+}

@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import DoctorImage from"./Images/doctorquestion.jpg";
+import DoctorImage from"./Images/doctorquestion.webp";
 
 export const DoctorQuestion = () => {
   const [nameText, setNameText] = useState("");

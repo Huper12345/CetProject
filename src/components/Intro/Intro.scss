@@ -35,3 +35,24 @@
     justify-content: space-around;
 }
 
+@media (max-width: 700px) {
+    .Intro-select {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Intro {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1050px) {
+   .Intro-Inner-Tab {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+   }
+}
