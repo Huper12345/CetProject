@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./NavToggle.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavDropMobile } from "./NavDropMobile";
+import {Link as LinkRoute} from "react-router-dom"
 
 export const NavToggle = (
 {
@@ -68,20 +69,16 @@ NavDropMobileDropLink4="#",
           >
             Где купить?
           </a>
-          <Link
+          <LinkRoute
             onClick={handleOpen}
             to="/"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={600}
             className="Toggle-Menu-Item"
           >
             Главная
-          </Link>
+          </LinkRoute>
           <Link
             onClick={handleOpen}
-            to="/"
+            to="Footer"
             spy={true}
             smooth={true}
             offset={-70}

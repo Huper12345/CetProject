@@ -7,6 +7,7 @@ import CrossIcon from  "./Images/cross.png";
 import { Header } from "../../components/Header";
 import { Title } from "../../helpers/Title";
 import { PreviousButton } from "../../helpers/components/PreviousButton"
+import { Footer } from "../../components/Footer"
 
 
 export const EatJournalRools = () => {
@@ -137,6 +138,7 @@ export const EatJournalRools = () => {
 
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

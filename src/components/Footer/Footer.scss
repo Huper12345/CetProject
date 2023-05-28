@@ -22,5 +22,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: 600px;
+    }
+
+    .Contacts-Container {
+      margin-top: 20px;
+    }
+
+    .Footer {
+      height: 700px;
     }
 }

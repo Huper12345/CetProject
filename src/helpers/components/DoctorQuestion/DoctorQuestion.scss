@@ -167,3 +167,18 @@
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 
+@media (max-width: 1150px) {
+ .Doctor-Question-Inner {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .Doctor-Img {
+  width: 100%;
+ }
+
+ .Doctor-Question-Content {
+  width: 100%;
+  margin-top: 30px;
+ }
+}

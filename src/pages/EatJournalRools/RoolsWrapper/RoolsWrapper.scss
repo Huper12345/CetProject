@@ -16,3 +16,9 @@
     color: $lightdark;
     padding: 0 25px;
 }
+
+@media (max-width: 400px) {
+    .Rools-Wrapper-Text {
+        font-size: 19px;
+    }
+ }
