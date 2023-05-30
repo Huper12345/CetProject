@@ -3,7 +3,7 @@ import { Title } from "../../Title";
 import { Advantages } from "../Advantages";
 import { DoctorQuestion } from "../DoctorQuestion";
 
-export const Questions = () => {
+export const Questions = ({Usage}) => {
     return(
         <div className="Questions">
             <div className="section">
@@ -19,11 +19,11 @@ export const Questions = () => {
                         />
                          <Advantages 
                         buttonText="Как принимать цетиризин?"
-                        droptext="Цетиризин это препарат нового поколения против аллергии"
+                        droptext={Usage}
                         />
                          <Advantages 
                         buttonText="Какую выбрать лекарственную форму?"
-                        droptext="Цетиризин это препарат нового поколения против аллергии"
+                        droptext="Рекомендуем выбирать лекарственную форму в зависимости от возраста пациента. Для детей от 6 месяце до 5 лет - Капли. С 6 лет - Таблетки. Перед применением обязательно проконсультируйтесь с врачом"
                         />
                         <div className="Doctor-Question-Container">
                             <DoctorQuestion />

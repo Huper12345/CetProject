@@ -40,6 +40,10 @@ export const Home = () => {
             </Intro>
             <Footer
             InstructionButtonStatus="Instruction-Button Hide"
+            Navroutelink2="/Tablets"
+            Navroutetext2="Цетиризин таблетки"
+            Navroutelink3="/Drops"
+            Navroutetext3="Цетиризин капли"
             />
         </div>
     )

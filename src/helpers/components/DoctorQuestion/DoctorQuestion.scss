@@ -151,13 +151,6 @@
   max-width: 260px;
 }
 
-.Doctor-Question-Button:hover {
-  color: $purple;
-  outline: 0;
-  box-shadow: 0 0 40px 40px $yellow inset;
-  border: 3px solid $yellow ;
-}
-
 .Doctor-Question-Button:focus {
   outline: 0;
 }
@@ -181,4 +174,13 @@
   width: 100%;
   margin-top: 30px;
  }
+}
+
+@media (min-width: 900px) {
+  .Doctor-Question-Button:hover {
+    color: $purple;
+    outline: 0;
+    box-shadow: 0 0 40px 40px $yellow inset;
+    border: 3px solid $yellow ;
+  }
 }

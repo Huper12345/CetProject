@@ -63,10 +63,36 @@ export const CetDrops = () => {
                     <EatJournal FoodDiary={FoodDiaryTab} />
                 </div>
             </div>
-            <Questions />
+            <Questions 
+            Usage="Дети 2-5 лет
+
+            Рекомендуемая доза составляет 2,5 мг (6 капель) два раза в день.
+            
+            Дети от 1 года до 2 лет
+            
+            Рекомендуемая доза составляет 2,5 мг (6 капель) один или два раза в день.
+            
+            Дети от 6 месяцев до 1 года
+            
+            Рекомендуемая доза составляет 2,5 мг (6 капель) один раз в день.
+            
+            Максимальная продолжительность лечения у детей с сезонным ринитом не должна превышать 4 недели."
+            />
             <Publications />
             <Footer 
             InstructionLink="https://www.rceth.by/NDfiles/instr/19_07_2952_s.pdf"
+            Navhref1="Intro"
+            Navtext1="Препарат"
+            Navhref2="DosageUsage"
+            Navtext2="Применение/дозировка"
+            Navhref3="EatJournal"
+            Navtext3="Пищевой дневник"
+            Navhref4="Pubclications"
+            Navtext4="Полезные материалы"
+            Navroutelink1="/"
+            Navroutetext1="Главная"
+            Navroutelink2="/Tablets"
+            Navroutetext2="Цетиризин таблетки"
             />
         </div>
     );

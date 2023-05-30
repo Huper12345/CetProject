@@ -59,10 +59,28 @@ export const CetTablets = () => {
                     <EatJournal FoodDiary={FoodDiaryTab} />
                 </div>
             </div>
-            <Questions />
+            <Questions 
+            Usage="Внутрь, независимо от приема пищи, запивая стаканом воды.
+            Взрослые и подростки старше 12 лет: 1 таблетка (10 мг) 1 раз в сутки. 
+            Дети от 6 до 12 лет: 10 мг (1 таблетка) один раз в день. Альтернативно, доза может быть разделена на два приема (половина таблетки, покрытой оболочкой, или 5 мг утром и вечером)
+            Продолжительность лечения сезонного ринита и аллергического конъюнктивита у детей не должна превышать 4 недель.
+            "
+            />
             <Publications />
             <Footer 
             InstructionLink="https://www.rceth.by/NDfiles/instr/20_12_3093_s.pdf"
+            Navhref1="Intro"
+            Navtext1="Препарат"
+            Navhref2="DosageUsage"
+            Navtext2="Применение/дозировка"
+            Navhref3="EatJournal"
+            Navtext3="Пищевой дневник"
+            Navhref4="Pubclications"
+            Navtext4="Полезные материалы"
+            Navroutelink1="/"
+            Navroutetext1="Главная"
+            Navroutelink3="/Drops"
+            Navroutetext3="Цетиризин капли"
             />
         </div>
     );

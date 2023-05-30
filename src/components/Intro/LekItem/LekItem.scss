@@ -23,30 +23,9 @@
     text-decoration: none;
 }
 
-.LekItem:hover {
-    text-decoration: none;
-}
-
 .LekItem:visited {
     text-decoration: none;
     color: inherit;
-}
-
-.LekItem:hover::after {
-    opacity: 1;
-}
-
-.LekItem:hover .LekItem-select {
-    opacity: 1;
-}
-
-.LekItem:hover .Mishkaz {
-    opacity: 0.9;
-}
-
-.LekItem:hover {
-    transform: translateY(-10px);
-    transition: 0.5s;
 }
 
 .LekItem::after {
@@ -174,3 +153,26 @@
         margin-right: 10px;
      }
 }
+
+@media (min-width: 900px) {
+    .LekItem:hover {
+        text-decoration: none;
+    }
+
+    .LekItem:hover::after {
+        opacity: 1;
+    }
+    
+    .LekItem:hover .LekItem-select {
+        opacity: 1;
+    }
+    
+    .LekItem:hover .Mishkaz {
+        opacity: 0.9;
+    }
+    
+    .LekItem:hover {
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+  }

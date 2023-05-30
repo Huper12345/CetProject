@@ -34,18 +34,6 @@
   color: $purple;
 }
 
-.Advantages-Button:hover  {
-  color: $blue;
-}
-
-.Advantages-Button:hover .Plus-Icon::after {
-  background-color: $blue;
-}
-
-.Advantages-Button:hover .Plus-Icon::before {
-  background-color: $blue;
-}
-
 .Advantages-Button.active {
   color: $yellow;
   font-size: 25px;
@@ -92,4 +80,18 @@
     font-size: 20px;
   }
   
+}
+
+@media (min-width: 900px) {
+  .Advantages-Button:hover  {
+    color: $blue;
+  }
+  
+  .Advantages-Button:hover .Plus-Icon::after {
+    background-color: $blue;
+  }
+  
+  .Advantages-Button:hover .Plus-Icon::before {
+    background-color: $blue;
+  }
 }

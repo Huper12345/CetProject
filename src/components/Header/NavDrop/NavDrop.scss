@@ -22,7 +22,7 @@
   text-decoration: none;
   position: relative;
   z-index: 1200;
-  transition: 0.3s;
+  transition: 0.5s;
   padding: 0 15px;
 }
 
@@ -41,19 +41,9 @@
   transition: 0.3s;
 }
 
-.NavDrop-Button:hover {
-  color: $blue;
-  transition: 0.1s;
-}
-
-.NavDrop-Button:hover::before {
-  border-color: $blue;
-  transform: rotate(43deg);
-  top: 10px;
-}
-
 .NavDrop-Button.active {
-  color: $darkviolet;
+  opacity: 0.1;
+  transition: 0.5s;
 }
 
 .NavDrop-Button.active::before {
@@ -91,14 +81,29 @@
   color: $yellow;
 }
 
-.NavDrop-Link:hover {
-  color: $blue;
-}
-
 @media (max-width: 900px) {
   .NavDrop {
       display: flex;
       margin-bottom: 200px;
       display: none;
   }
+}
+
+
+@media (min-width: 900px) {
+  .NavDrop-Button:hover {
+    color: $blue;
+    transition: 0.1s;
+  }
+  
+  .NavDrop-Button:hover::before {
+    border-color: $blue;
+    transform: rotate(43deg);
+    top: 10px;
+  }
+
+  .NavDrop-Link:hover {
+    color: $blue;
+  }
+  
 }

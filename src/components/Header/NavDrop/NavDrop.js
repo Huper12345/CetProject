@@ -29,13 +29,8 @@ export const NavDrop = ({
   return (
     <div className={NavClass} onMouseLeave={handleClose}>
         <Link
-        to={href}
-        smooth={true}
-        offset={-70}
-        duration={600}
         onMouseEnter={handleOpen}
         className={open ? 'NavDrop-Button active' : 'NavDrop-Button'}
-        onClick={handleClose}
       >
         {buttonText}
       </Link>

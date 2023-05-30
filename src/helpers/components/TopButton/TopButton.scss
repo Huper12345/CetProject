@@ -11,10 +11,6 @@
   transition: 0.3s;
 }
 
-.Top-Button:hover {
-  fill: $blue;
-}
-
 .Top-Button-Wrapper {
   display: none;
 }
@@ -30,3 +26,10 @@
   z-index: 3000;
 }
 
+@media (min-width: 900px) {
+
+  .Top-Button:hover {
+    fill: $blue;
+  }
+
+}

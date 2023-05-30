@@ -35,6 +35,15 @@
     justify-content: space-around;
 }
 
+@media (max-width: 1050px) {
+   .Intro-Inner-Tab {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+   }
+}
+
 @media (max-width: 700px) {
     .Intro-select {
         flex-direction: column;
@@ -45,14 +54,14 @@
 
     .Intro {
         height: 100%;
+        padding-bottom: 200px;
     }
 }
 
-@media (max-width: 1050px) {
-   .Intro-Inner-Tab {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-   }
+@media (max-width: 899px) {
+
+    .Intro {
+        padding-bottom: 100px;
+        height: 100%;
+    }
 }
