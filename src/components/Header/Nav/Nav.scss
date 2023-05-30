@@ -24,9 +24,6 @@
     display: none;
 }
 
-.Nav-link:hover {
-    color: $blue;
-}
 
 @media (max-width: 899px) {
     .Nav-container {
@@ -35,3 +32,10 @@
         width: 100%;
     }
   }
+
+  @media (min-width: 900px) {
+    .Nav-link:hover {
+        color: $blue;
+    }
+  
+}

@@ -19,15 +19,6 @@
     z-index: 1700;
 }
 
-.IntroImage-Wrapper:hover::after {
-    opacity: 0.9;
-}
-
-.IntroImage-Wrapper:hover {
-   transform: translateY(-7px);
-   transition: 0.5s;
-}
-
 .Dialog-Buble {
     position: relative;
     font-size: 18px;
@@ -114,5 +105,17 @@
     }
     
 }
+
+@media (min-width: 900px) {
+    .IntroImage-Wrapper:hover::after {
+        opacity: 0.9;
+    }
+    
+    .IntroImage-Wrapper:hover {
+       transform: translateY(-7px);
+       transition: 0.5s;
+    }
+
+  }
 
 

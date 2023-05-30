@@ -63,6 +63,18 @@ export const CetTablets = () => {
             <Publications />
             <Footer 
             InstructionLink="https://www.rceth.by/NDfiles/instr/20_12_3093_s.pdf"
+            Navhref1="Intro"
+            Navtext1="Препарат"
+            Navhref2="DosageUsage"
+            Navtext2="Применение/дозировка"
+            Navhref3="EatJournal"
+            Navtext3="Пищевой дневник"
+            Navhref4="Pubclications"
+            Navtext4="Полезные материалы"
+            Navroutelink1="/"
+            Navroutetext1="Главная"
+            Navroutelink3="/Drops"
+            Navroutetext3="Цетиризин капли"
             />
         </div>
     );

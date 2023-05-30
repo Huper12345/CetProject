@@ -138,7 +138,22 @@ export const EatJournalRools = () => {
 
                 </div>
             </div>
-            <Footer />
+            <Footer
+            Navhref1="Intro"
+            Navtext1="Препарат"
+            Navhref2="DosageUsage"
+            Navtext2="Применение/дозировка"
+            Navhref3="EatJournal"
+            Navtext3="Пищевой дневник"
+            Navhref4="Pubclications"
+            Navtext4="Полезные материалы"
+            Navroutelink1="/"
+            Navroutetext1="Главная"
+            Navroutelink2="/Tablets"
+            Navroutetext2="Цетиризин таблетки"
+            Navroutelink3="/Drops"
+            Navroutetext3="Цетиризин капли"
+            />
         </div>
     );
 };

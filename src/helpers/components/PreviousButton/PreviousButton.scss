@@ -44,16 +44,6 @@
     transition: 0.5s;
 }
 
-.PreviousButton:hover::before {
-   border-color: $white;
-   transition: 0.5s;
-}
-
-.PreviousButton:hover {
-    color: $white;
-    outline: 0;
-  }
-
   .PreviousButton:focus {
     outline: 0;
   }
@@ -62,8 +52,23 @@
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   }
+ 
+  @media (min-width: 900px) {
 
-  .PreviousButton:hover {
-    box-shadow: 0 0 40px 40px $darkviolet inset;
-    border: 3px solid $darkviolet ;
+    .PreviousButton:hover::before {
+      border-color: $white;
+      transition: 0.5s;
+   }
+   
+   .PreviousButton:hover {
+       color: $white;
+       outline: 0;
+     }
+
+     .PreviousButton:hover {
+      box-shadow: 0 0 40px 40px $darkviolet inset;
+      border: 3px solid $darkviolet ;
+    }
+  
+  
   }

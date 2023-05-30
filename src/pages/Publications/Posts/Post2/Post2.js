@@ -32,7 +32,14 @@ export const Post2 = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer 
+            Navroutelink1="/"
+            Navroutetext1="Главная"
+            Navroutelink2="/Tablets"
+            Navroutetext2="Цетиризин таблетки"
+            Navroutelink3="/Drops"
+            Navroutetext3="Цетиризин капли"
+            />
         </div>
     );
 };
