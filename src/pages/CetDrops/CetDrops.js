@@ -11,7 +11,7 @@ import { Footer } from "../../components/Footer";
 import { Publications } from "../../components/Publications";
 import { TopButton } from "../../helpers/components/TopButton";
 import Zaec from "../../helpers/Images/Intro/zaec.webp"
-import DropsPack from "../../helpers/Images/Packs/kaplip7.webp"
+import DropsPack from "../../helpers/Images/Packs/kaplip15.webp"
 import BabyMarker from "../../helpers/Images/Markers/baby-boy1.webp"
 import DropsMarker from "../../helpers/Images/Markers/water-drop.webp"
 import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf"
@@ -19,7 +19,7 @@ import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf"
 
 
 export const CetDrops = () => {
-    return(
+    return (
         <div className="CetDrops">
             <Header
             BuyButtonStatus="Nav-link"
