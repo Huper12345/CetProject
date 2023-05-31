@@ -28,6 +28,10 @@ export const CetDrops = () => {
             ToggleBuyButton="Toggle-Menu-Item"
             NavDropMobileStatus="NavMobile"
             NavDropStatus="NavDrop"
+            NavRouteText1="Главная"
+            NavRouteLink1="/"
+            MainNav="Таблетки"
+            MainLink="/Tablets"
             />
             <TopButton />
             <Intro 

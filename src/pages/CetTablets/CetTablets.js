@@ -26,6 +26,10 @@ export const CetTablets = () => {
             ToggleBuyButton="Toggle-Menu-Item"
             NavDropMobileStatus="NavMobile"
             NavDropStatus="NavDrop"
+            NavRouteText1="Главная"
+            NavRouteLink1="/"
+            MainNav="Капли"
+            MainLink="/Drops"
             />
             <TopButton />
             <Intro 

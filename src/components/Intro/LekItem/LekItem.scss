@@ -7,8 +7,8 @@
     user-select: none;
     position: relative;
     z-index: 500;
-    background: $lightyellow;
-    background: linear-gradient(0deg, rgba(232,218,155,0.9) 0%, rgba(77, 49, 94, 0.9) 54%);
+    background: $white;
+    background: linear-gradient(0deg, $darkviolet 0%, $purple 32%,);
     cursor: pointer;
     display: flex;
     margin-bottom: 100px;
@@ -64,14 +64,14 @@
     font-style: normal;
     font-weight: 300;
     font-size: 26px;
-    color: $darkviolet;
+    color: $yellow;
 }
 
 .LekItem-subtext {
     text-align: left;
     padding-right: 5px;
     font-size: 20px;
-    color: $darkviolet;
+    color: $yellow;
 }
 
 .lekItem-img {
@@ -81,6 +81,7 @@
     height: auto;
     z-index: 1;
     padding-top: 10px;
+    opacity: 0.9;
 }
 
 .LekItem-textBlock {
@@ -124,9 +125,9 @@
     display: block;
     position: absolute;
     top: 5%;
-    right: 25%;
-    transform: translateX(-25%);
-   max-width: 200px;
+    right: 27%;
+    transform: translateX(-27%);
+   max-width: 150px;
    z-index: 1500;
    opacity: 0;
    transition: 0.6s;

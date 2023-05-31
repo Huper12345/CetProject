@@ -4,13 +4,15 @@ import { PreviousButton } from "../../../../helpers/components/PreviousButton";
 import Post2Image from "../../../../helpers/Images/Posts/post2.webp"
 import {Title} from "../../../../helpers/Title"
 import { Footer } from "../../../../components/Footer";
-import { TopButton } from "../../../../helpers/components/TopButton";
 
 
 export const Post2 = () => {
     return(
         <div className="Post">
-            <Header />
+            <Header 
+            MainNav="Главная"
+            MainLink="/"
+            />
             <div className="container">
                 <div className="Post-Wrapper">
                     <PreviousButton />
@@ -32,7 +34,8 @@ export const Post2 = () => {
                     </div>
                 </div>
             </div>
-            <Footer 
+            <Footer
+            InstructionButtonStatus="Instruction-Button Hide" 
             Navroutelink1="/"
             Navroutetext1="Главная"
             Navroutelink2="/Tablets"

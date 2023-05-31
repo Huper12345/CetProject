@@ -9,7 +9,10 @@ import { Footer } from "../../../../components/Footer";
 export const Post1 = () => {
     return(
         <div className="Post">
-            <Header />
+            <Header 
+            MainNav="Главная"
+            MainLink="/"
+            />
             <div className="container">
                 <div className="Post-Wrapper">
                     <PreviousButton />
@@ -27,7 +30,15 @@ export const Post1 = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer
+            InstructionButtonStatus="Instruction-Button Hide" 
+            Navroutelink1="/"
+            Navroutetext1="Главная"
+            Navroutelink2="/Tablets"
+            Navroutetext2="Цетиризин таблетки"
+            Navroutelink3="/Drops"
+            Navroutetext3="Цетиризин капли"
+            />
         </div>
     );
 };

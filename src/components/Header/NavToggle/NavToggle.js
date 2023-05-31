@@ -19,6 +19,10 @@ NavDropMobileDropText3="#",
 NavDropMobileDropLink3="#",
 NavDropMobileDropText4="#",
 NavDropMobileDropLink4="#",
+RouteLink1,
+RouteText1,
+MainNav,
+MainLink,
 
 }  
 ) => {
@@ -71,10 +75,18 @@ NavDropMobileDropLink4="#",
           </a>
           <LinkRoute
             onClick={handleOpen}
-            to="/"
+            to={MainLink}
             className="Toggle-Menu-Item"
           >
-            Главная
+            {MainNav}
+          </LinkRoute>
+
+          <LinkRoute
+            onClick={handleOpen}
+            to={RouteLink1}
+            className="Toggle-Menu-Item"
+          >
+             {RouteText1}
           </LinkRoute>
           <Link
             onClick={handleOpen}

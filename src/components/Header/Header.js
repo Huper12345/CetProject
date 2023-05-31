@@ -20,6 +20,10 @@ export const Header = ({
     NavDropLink3="Questions",
     NavDropText4="Полезные материалы",
     NavDropLink4="Publications",
+    MainNav,
+    MainLink,
+    NavRouteLink1,
+    NavRouteText1,
     }) => {
     
     return (
@@ -42,8 +46,10 @@ export const Header = ({
                             NavClass={NavDropStatus}
                             />
                             <Nav 
-                            mainText='Главная'
-                            main='/'
+                            mainText={MainNav}
+                            main={MainLink}
+                            RouteLink1={NavRouteLink1}
+                            RouteText1={NavRouteText1}
                             text2='Контакты'
                             href2='Footer'
                             BuyButton={BuyButtonStatus}
@@ -63,6 +69,10 @@ export const Header = ({
                         NavDropMobileDropLink3={NavDropLink3}
                         NavDropMobileDropText4={NavDropText4}
                         NavDropMobileDropLink4={NavDropLink4}
+                        MainLink={MainLink}
+                        MainNav={MainNav}
+                        RouteLink1={NavRouteLink1}
+                        RouteText1={NavRouteText1}
                         />
                     </div>
                 </div>
