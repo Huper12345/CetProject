@@ -10,6 +10,10 @@ hrefBuy="#",
 mainText ="",
 text2 ="",
 BuyButton="Nav-link Hide",
+RouteText1,
+RouteLink1,
+RouteText2,
+RouteLink2,
 
 }) => {
     return (
@@ -27,6 +31,13 @@ BuyButton="Nav-link Hide",
                 className="Nav-link"
                 >
                 {mainText}
+                </LinkRoute>
+
+                <LinkRoute
+                to={RouteLink1} 
+                className="Nav-link"
+                >
+                {RouteText1}
                 </LinkRoute>
 
                 <Link

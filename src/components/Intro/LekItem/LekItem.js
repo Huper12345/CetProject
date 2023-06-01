@@ -1,5 +1,4 @@
 import './LekItem.scss';
-import Mishkaz from "./images/mishkaz.webp"
 import {Link} from 'react-router-dom';
 
 
@@ -13,6 +12,7 @@ export const LekItem = ({
     alt2, 
     marker2, 
     LekText3,
+    WildImg,
     href="#"
     }) => {
 
@@ -33,7 +33,7 @@ export const LekItem = ({
                         </div>
                         <div className='LekItem-subtext'>{LekText3}</div>
                         <div className='LekItem-select'>Подробнее</div>
-                        <img className='Mishkaz' src={Mishkaz} alt='Mishkaizayka'></img>
+                        <img className='Mishkaz' src={WildImg} alt='Mishkaizayka'></img>
 
                     </div> {/*  LekItem-textWrapper' */}
 

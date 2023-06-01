@@ -4,7 +4,7 @@ import { Intro } from "../../components/Intro";
 import { LekItemTab } from "../../helpers/components/LekItemTab";
 import { IntroImage } from "../../helpers/components/IntroImage";
 import { EatJournal } from "../../helpers/components/EatJournal";
-import TabPack2 from "../../helpers/Images/Packs/Tab2.webp"
+import TabPack2 from "../../helpers/Images/Packs/Tab9.webp"
 import ChildMarker from "../../helpers/Images/Markers/son2.webp"
 import pills from "../../helpers/Images/Markers/pills.webp"
 import Mishka from "../../helpers/Images/Intro/mishka2.webp"
@@ -17,7 +17,7 @@ import { Footer } from "../../components/Footer";
 import { TopButton } from "../../helpers/components/TopButton";
 
 export const CetTablets = () => {
-    return(
+    return (
         <div className="CetTablets">
             <Header 
             BuyButtonStatus="Nav-link"
@@ -26,6 +26,10 @@ export const CetTablets = () => {
             ToggleBuyButton="Toggle-Menu-Item"
             NavDropMobileStatus="NavMobile"
             NavDropStatus="NavDrop"
+            NavRouteText1="Главная"
+            NavRouteLink1="/"
+            MainNav="Капли"
+            MainLink="/Drops"
             />
             <TopButton />
             <Intro 

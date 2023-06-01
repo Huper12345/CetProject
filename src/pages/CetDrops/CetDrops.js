@@ -10,8 +10,8 @@ import { DosageUsage } from "../../helpers/components/DosageUsage";
 import { Footer } from "../../components/Footer";
 import { Publications } from "../../components/Publications";
 import { TopButton } from "../../helpers/components/TopButton";
-import Zaec from "../../helpers/Images/Intro/zaec.webp"
-import DropsPack from "../../helpers/Images/Packs/kaplip7.webp"
+import Zaec from "../../helpers/Images/Intro/mishaZaec.webp"
+import DropsPack from "../../helpers/Images/Packs/kapli16.webp"
 import BabyMarker from "../../helpers/Images/Markers/baby-boy1.webp"
 import DropsMarker from "../../helpers/Images/Markers/water-drop.webp"
 import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf"
@@ -19,7 +19,7 @@ import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf"
 
 
 export const CetDrops = () => {
-    return(
+    return (
         <div className="CetDrops">
             <Header
             BuyButtonStatus="Nav-link"
@@ -28,6 +28,10 @@ export const CetDrops = () => {
             ToggleBuyButton="Toggle-Menu-Item"
             NavDropMobileStatus="NavMobile"
             NavDropStatus="NavDrop"
+            NavRouteText1="Главная"
+            NavRouteLink1="/"
+            MainNav="Таблетки"
+            MainLink="/Tablets"
             />
             <TopButton />
             <Intro 
@@ -37,7 +41,7 @@ export const CetDrops = () => {
             <IntroImage 
             Image={Zaec}
             alt="Zaec"
-            BubleText="Про таблетки вам расскажет медведь. Капли для меня." />
+            BubleText="Мы с аллергией не друзья! Цетиризин есть у меня." />
              <LekItemTab 
                 Img={DropsPack}
                 marker1={BabyMarker}

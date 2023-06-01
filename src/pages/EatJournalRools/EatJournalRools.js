@@ -13,7 +13,10 @@ import { Footer } from "../../components/Footer"
 export const EatJournalRools = () => {
     return(
         <div className="EatJournalRools">
-            <Header />
+            <Header 
+            MainNav="Главная"
+            MainLink="/"
+            />
             <div className="container">
                 <div className="Eat-Rools-Wrapper">
                     <PreviousButton />
@@ -153,6 +156,7 @@ export const EatJournalRools = () => {
             Navroutetext2="Цетиризин таблетки"
             Navroutelink3="/Drops"
             Navroutetext3="Цетиризин капли"
+            InstructionButtonStatus="Instruction-Button Hide"
             />
         </div>
     );

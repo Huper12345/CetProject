@@ -7,8 +7,8 @@
     user-select: none;
     position: relative;
     z-index: 500;
-    background: $lightyellow;
-    background: linear-gradient(0deg, rgba(232,218,155,0.9) 0%, rgba(77, 49, 94, 0.9) 54%);
+    background: $white;
+    background: linear-gradient(0deg, $darkviolet 0%, $purple 32%,);
     cursor: pointer;
     display: flex;
     margin-bottom: 100px;
@@ -16,6 +16,7 @@
     transition: 0.5s;
     text-decoration: none;
     outline: none;
+    opacity: 0.9;
     
 }
 
@@ -37,7 +38,7 @@
     left: 0;
     z-index: 1000;
     background: rgb(232,218,155);
-    background: linear-gradient(351deg, rgba(232,218,155,0.8) 4%, rgba(132,175,209,0.8) 28%, rgba(99,67,118,0.8) 57%);
+    background: linear-gradient(351deg, rgba(255, 238, 162, 0.8) 4%, rgba(132,175,209,0.8) 28%, rgba(121, 25, 176, 0.8) 57%);
     opacity: 0;
     transition: 0.6s;
     border: 3px solid $yellow;
@@ -64,14 +65,14 @@
     font-style: normal;
     font-weight: 300;
     font-size: 26px;
-    color: $darkviolet;
+    color: $yellow;
 }
 
 .LekItem-subtext {
     text-align: left;
     padding-right: 5px;
     font-size: 20px;
-    color: $darkviolet;
+    color: $yellow;
 }
 
 .lekItem-img {
@@ -82,6 +83,7 @@
     z-index: 1;
     padding-top: 10px;
 }
+
 
 .LekItem-textBlock {
     display: flex;
@@ -124,9 +126,9 @@
     display: block;
     position: absolute;
     top: 5%;
-    right: 25%;
-    transform: translateX(-25%);
-   max-width: 200px;
+    right: 27%;
+    transform: translateX(-27%);
+   max-width: 150px;
    z-index: 1500;
    opacity: 0;
    transition: 0.6s;
