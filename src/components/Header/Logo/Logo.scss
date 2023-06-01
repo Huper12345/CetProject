@@ -13,12 +13,25 @@
   font-family: 'Nutito-Regular';
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
   position: absolute;
   left: 60px;
-  top: 8px;
+  top: -1px;
   color: $dirtyyellow;
   transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.Logo-Text-Title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.Logo-Text-Subtext {
+  margin: 0;
+  font-size: 17px;
 }
 
 .Logo-Link {
@@ -33,7 +46,8 @@
 }
 
 @media (min-width: 900px) {
-  .Logo-Link:hover .Logo-Text {
-    color: $blue;
-   }
+  .Logo-Text:hover {
+      color: $blue;
+  }
+
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Logo.scss";
-import LogoT from "../../../helpers/Images/Logo/logoCET2.webp";
+import LogoT from "../../../helpers/Images/Logo/logoCET3.webp";
 import {Link} from "react-router-dom";
 
 
@@ -20,7 +20,8 @@ export const Logo = () => {
             height="50px"
           ></img>
           <div className="Logo-Text">
-            Цетиризин
+            <p className="Logo-Text-Title">Цетиризин</p>
+            <p className="Logo-Text-Subtext">Borimed</p> 
           </div>
         </div>
       </Link>

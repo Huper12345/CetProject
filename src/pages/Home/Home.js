@@ -4,8 +4,8 @@ import { Header } from "../../components/Header";
 import { LekItem } from '../../components/Intro/LekItem';
 import { Preview } from '../../components/Intro/Preview';
 import { Footer } from "../../components/Footer";
-import TabPack from "../../helpers/Images/Packs/Tab3Height.webp"
-import TabPack2 from "../../helpers/Images/Packs/kaplip7Height.webp"
+import TabPack from "../../helpers/Images/Packs/Tab9Height.webp"
+import TabPack2 from "../../helpers/Images/Packs/Kapli16Height.webp"
 import ChildMarker from "../../helpers/Images/Markers/son2.webp"
 import pills from "../../helpers/Images/Markers/pills.webp"
 import babymarker from "../../helpers/Images/Markers/baby-boy1.webp"

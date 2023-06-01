@@ -4,7 +4,7 @@ import { Intro } from "../../components/Intro";
 import { LekItemTab } from "../../helpers/components/LekItemTab";
 import { IntroImage } from "../../helpers/components/IntroImage";
 import { EatJournal } from "../../helpers/components/EatJournal";
-import TabPack2 from "../../helpers/Images/Packs/Tab7n.webp"
+import TabPack2 from "../../helpers/Images/Packs/Tab9.webp"
 import ChildMarker from "../../helpers/Images/Markers/son2.webp"
 import pills from "../../helpers/Images/Markers/pills.webp"
 import Mishka from "../../helpers/Images/Intro/mishka2.webp"
