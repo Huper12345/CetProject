@@ -18,11 +18,11 @@ export const App = () => {
         <Route path='/' element={<Layout />}>
 
           <Route index element={<Home />} />
-          <Route path='/EatJournal/Food-Diary-Rools' element={<EatJournalRools />} />
-          <Route path='/Tablets' element={<CetTablets />} />
-          <Route path='/Drops' element={<CetDrops />} />
-          <Route path='/Publications/1' element={<Post1 />} />
-          <Route path='/Publications/2' element={<Post2 />} />
+          <Route path='EatJournal/Food-Diary-Rools' element={<EatJournalRools />} />
+          <Route path='Tablets' element={<CetTablets />} />
+          <Route path='Drops' element={<CetDrops />} />
+          <Route path='Publications/1' element={<Post1 />} />
+          <Route path='Publications/2' element={<Post2 />} />
         </Route>
       </Routes>
       </div>
