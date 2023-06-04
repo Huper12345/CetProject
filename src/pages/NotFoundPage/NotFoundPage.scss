@@ -1,0 +1,31 @@
+@import "../../helpers/colors/colors.scss";
+@import "../../helpers/fonts/fonts.scss";
+
+.NotFoundPage-Inner {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.NotFoundPage {
+    background-color: $purple;
+    height: 100vh;
+}
+
+.NotFound-Title {
+    font-family: 'Nutito-Regular';
+    font-style: normal;
+    font-weight: 400;
+    color: $yellow;
+}
+
+.NotFound-Image {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 200px;
+    margin-top: 20px;
+    padding-right: 25px;
+}

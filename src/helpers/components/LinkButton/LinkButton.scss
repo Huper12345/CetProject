@@ -28,6 +28,11 @@
     color: $purple;
 }
 
+.LinkButton.Yellow {
+  border: 3px solid $yellow;
+  color: $yellow;
+}
+
 .LinkButton:focus {
     outline: 0;
   }
@@ -55,6 +60,12 @@
   .LinkButton:hover {
     box-shadow: 0 0 40px 40px $darkviolet inset;
     border: 3px solid $darkviolet ;
+  }
+
+  .LinkButton.Yellow:hover {
+    box-shadow: 0 0 40px 40px $yellow inset;
+    border: 3px solid $yellow;
+    color: $purple; 
   }
 
 }
