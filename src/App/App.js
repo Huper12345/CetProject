@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom';
 import { Home } from '../pages/Home';
 import { CetTablets } from '../pages/CetTablets';
 import { Layout } from '../pages/Layout';
+import { NotFoundPage } from '../pages/NotFoundPage';
 import { EatJournalRools } from '../pages/EatJournalRools';
 import { CetDrops } from '../pages/CetDrops';
 import { Post1 } from '../pages/Publications/Posts/Post1';
@@ -24,6 +25,7 @@ export const App = () => {
           <Route path='Publications/1' element={<Post1 />} />
           <Route path='Publications/2' element={<Post2 />} />
         </Route>
+        <Route path='*' element={<NotFoundPage />} />
       </Routes>
       </div>
   );
