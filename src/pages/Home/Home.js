@@ -10,8 +10,8 @@ import ChildMarker from "../../helpers/Images/Markers/age.webp"
 import pills from "../../helpers/Images/Markers/pills.webp"
 import babymarker from "../../helpers/Images/Markers/baby-boy1.webp"
 import dropMarker from "../../helpers/Images/Markers/water-drop.webp"
-import Mishka from "../../helpers/Images/Intro/misha2.webp"
-import Zaec2 from "../../helpers/Images/Intro/mishkaz.webp"
+import Mishka from "../../helpers/Images/Intro/devushka.webp"
+import Zaec2 from "../../helpers/Images/Intro/mishaZaec.webp"
 
 export const Home = () => {
     return (
