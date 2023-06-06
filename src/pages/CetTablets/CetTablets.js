@@ -7,7 +7,7 @@ import { EatJournal } from "../../helpers/components/EatJournal";
 import TabPack2 from "../../helpers/Images/Packs/Tab9.webp"
 import ChildMarker from "../../helpers/Images/Markers/age.webp"
 import pills from "../../helpers/Images/Markers/pills.webp"
-import Mishka from "../../helpers/Images/Intro/mishka2.webp"
+import Mishka from "../../helpers/Images/Intro/devushka.webp"
 import { Title } from "../../helpers/Title";
 import { Questions } from "../../helpers/components/Questions";
 import FoodDiaryTab from "../../helpers/Files/Food-diary.pdf";
@@ -31,14 +31,13 @@ export const CetTablets = () => {
             MainNav="Капли"
             MainLink="/Drops"
             />
-            <TopButton />
             <Intro 
             className="Intro-Inner-Tab"
             className2="Intro Tab">
                 <IntroImage 
                 Image={Mishka}
                 alt="Mishka" 
-                BubleText="Мы с аллергией не друзья, цетиризин есть у меня!"/>
+                BubleText="Цетиризин таблетки - для взрослых и детей!"/>
                 <LekItemTab 
                 Img={TabPack2}
                 marker1={ChildMarker}

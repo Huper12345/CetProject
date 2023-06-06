@@ -1,8 +1,8 @@
 import React from "react";
 import "./TopButton.scss";
 import { Link, animateScroll as scroll } from 'react-scroll';
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+
 
 
 export const TopButton = () => {
@@ -15,6 +15,7 @@ export const TopButton = () => {
       window.removeEventListener('scroll', isVisible);
     };
   }, []);
+
 
   const isVisible = () => {
     const introHeight = document.querySelector('#Intro').offsetHeight;

@@ -33,7 +33,6 @@ export const CetDrops = () => {
             MainNav="Таблетки"
             MainLink="/Tablets"
             />
-            <TopButton />
             <Intro 
             className="Intro-Inner-Tab"
             className2="Intro Tab"
