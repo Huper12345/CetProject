@@ -5,24 +5,26 @@ import { useState, useEffect } from "react";
 
 
 
-export const TopButton = () => {
+export const TopButton = ({refComponent}) => {
   const [visible, setVisible] = useState('');
 
-  // on render, set listener
   useEffect(() => {
+ 
+      const introHeight = refComponent.current.getBoundingClientRect().height;
+  
+      const isVisible = () => {
+        const scrollTop = window.scrollY;
+        const visibleClass = scrollTop >= introHeight - 200 ? 'is-visible' : '';
+        setVisible(visibleClass);
+      };
+  
+      console.log(useEffect)
     window.addEventListener('scroll', isVisible);
     return () => {
       window.removeEventListener('scroll', isVisible);
     };
-  }, []);
+  }, [refComponent]);
 
-
-  const isVisible = () => {
-    const introHeight = document.querySelector('#Intro').offsetHeight;
-    const scrollTop = window.scrollY;
-    const visibleClass = scrollTop >= introHeight - 200 ? 'is-visible' : '';
-    setVisible(visibleClass);
-  };
 
   const classes = `Top-Button-Wrapper ${visible}`;
 
