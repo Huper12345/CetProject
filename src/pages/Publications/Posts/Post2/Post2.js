@@ -4,9 +4,14 @@ import { PreviousButton } from "../../../../helpers/components/PreviousButton";
 import Post2Image from "../../../../helpers/Images/Posts/post2.webp"
 import {Title} from "../../../../helpers/Title"
 import { Footer } from "../../../../components/Footer";
+import { TopButton } from "../../../../helpers/components/TopButton";
+import { createRef } from "react";
 
 
 export const Post2 = () => {
+    
+    const refComponent = createRef();
+    
     return(
         <div className="Post">
             <Header 
@@ -14,12 +19,12 @@ export const Post2 = () => {
             MainLink="/"
             />
             <div className="container">
-                <div className="Post-Wrapper">
+                <div id="Post-Wrapper-2" className="Post-Wrapper">
                     <PreviousButton />
                     <div className="Post-Content">
                     <Title TitleText="Как облегчить аллергию весной?" />
                     <img className="Post-Image" alt="Первые симптомы аллергии" src={Post2Image}></img>
-                    <div className="Post-Text">
+                    <div ref={refComponent} className="Post-Text">
 
                     Для многих людей весенние солнечные дни омрачаются чиханьем, кашлем, покраснением глаз и насморком. От сезонной аллергии страдает 40% взрослого населения, а пик обострений приходится именно на весенний период. Всплеск заболеваемости отмечается в конце апреля и в начале мая, именно в это время начинают цвести деревья и кустарники.
 
@@ -34,6 +39,10 @@ export const Post2 = () => {
                     </div>
                 </div>
             </div>
+            <TopButton 
+            refComponent={refComponent} 
+            linkWay="Post-Wrapper-2"
+            />
             <Footer
             InstructionButtonStatus="Instruction-Button Hide" 
             Navroutelink1="/"

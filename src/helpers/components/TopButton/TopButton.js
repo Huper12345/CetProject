@@ -5,31 +5,31 @@ import { useState, useEffect } from "react";
 
 
 
-export const TopButton = () => {
+export const TopButton = ({refComponent, linkWay="Intro"}) => {
   const [visible, setVisible] = useState('');
 
-  // on render, set listener
   useEffect(() => {
+ 
+      const introHeight = refComponent.current.getBoundingClientRect().height;
+  
+      const isVisible = () => {
+        const scrollTop = window.scrollY;
+        const visibleClass = scrollTop >= introHeight - 200 ? 'is-visible' : '';
+        setVisible(visibleClass);
+      };
+  
     window.addEventListener('scroll', isVisible);
     return () => {
       window.removeEventListener('scroll', isVisible);
     };
-  }, []);
-
-
-  const isVisible = () => {
-    const introHeight = document.querySelector('#Intro').offsetHeight;
-    const scrollTop = window.scrollY;
-    const visibleClass = scrollTop >= introHeight - 200 ? 'is-visible' : '';
-    setVisible(visibleClass);
-  };
+  }, [refComponent]);
 
   const classes = `Top-Button-Wrapper ${visible}`;
 
   return (
     <Link 
     className={classes}
-    to="Intro"
+    to={linkWay}
     smooth={true}
     offset={-70}
     duration={600}

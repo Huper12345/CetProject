@@ -4,9 +4,13 @@ import { PreviousButton } from "../../../../helpers/components/PreviousButton";
 import Post1Image from "../../../../helpers/Images/Posts/post1.webp"
 import {Title} from "../../../../helpers/Title"
 import { Footer } from "../../../../components/Footer";
+import { TopButton } from "../../../../helpers/components/TopButton";
+import { createRef } from "react";
 
 
 export const Post1 = () => {
+    const refComponent = createRef();
+    
     return(
         <div className="Post">
             <Header 
@@ -14,12 +18,12 @@ export const Post1 = () => {
             MainLink="/"
             />
             <div className="container">
-                <div className="Post-Wrapper">
+                <div id="Post-Wrapper-1" className="Post-Wrapper">
                     <PreviousButton />
                     <div className="Post-Content">
                     <Title TitleText="Первые симптомы аллергии" />
                     <img className="Post-Image" alt="Первые симптомы аллергии" src={Post1Image}></img>
-                    <div className="Post-Text">
+                    <div ref={refComponent} className="Post-Text">
 
                     Чихание - естественный для организма способ избавления от раздражающих субстанций (пыль, песок и т.д.), которые удаляются вместе с небольшим количеством секреторной жидкости. При аллергии эта реакция становится преувеличенной. Приступы чихания длятся изо дня в день без очевидной причины, при отсутствии признаков простуды.
 
@@ -30,6 +34,10 @@ export const Post1 = () => {
                     </div>
                 </div>
             </div>
+            <TopButton 
+            refComponent={refComponent} 
+            linkWay="Post-Wrapper-1"
+            />
             <Footer
             InstructionButtonStatus="Instruction-Button Hide" 
             Navroutelink1="/"
