@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 
 
-export const TopButton = ({refComponent}) => {
+export const TopButton = ({refComponent, linkWay="Intro"}) => {
   const [visible, setVisible] = useState('');
 
   useEffect(() => {
@@ -18,20 +18,18 @@ export const TopButton = ({refComponent}) => {
         setVisible(visibleClass);
       };
   
-      console.log(useEffect)
     window.addEventListener('scroll', isVisible);
     return () => {
       window.removeEventListener('scroll', isVisible);
     };
   }, [refComponent]);
 
-
   const classes = `Top-Button-Wrapper ${visible}`;
 
   return (
     <Link 
     className={classes}
-    to="Intro"
+    to={linkWay}
     smooth={true}
     offset={-70}
     duration={600}

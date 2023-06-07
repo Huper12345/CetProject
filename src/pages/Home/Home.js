@@ -10,8 +10,8 @@ import ChildMarker from "../../helpers/Images/Markers/age.webp"
 import pills from "../../helpers/Images/Markers/pills.webp"
 import babymarker from "../../helpers/Images/Markers/baby-boy1.webp"
 import dropMarker from "../../helpers/Images/Markers/water-drop.webp"
-import Mishka from "../../helpers/Images/Intro/devushka.webp"
-import Zaec2 from "../../helpers/Images/Intro/mishaZaec.webp"
+import TabletsPreviewImage from "../../helpers/Images/Intro/devushkaLow.webp"
+import DropsPreviewImage from "../../helpers/Images/Intro/MishaZaecLow.webp"
 
 export const Home = () => {
     return (
@@ -33,7 +33,7 @@ export const Home = () => {
                         LekText2="Таблетки"
                         LekText3="Лекарственный препарат цетиризин в таблетках это эффективное средство против аллергии для взрослых"
                         href='/Tablets'
-                        WildImg={Mishka}
+                        WildImg={TabletsPreviewImage}
                         />
                         <LekItem 
                         Img={TabPack2}
@@ -43,7 +43,7 @@ export const Home = () => {
                         LekText2="Капли"
                         LekText3="Лекарственный препарат цетиризин в каплях это эффективное средство против аллергии для детей"
                         href='/Drops'
-                        WildImg={Zaec2}
+                        WildImg={DropsPreviewImage}
                         />
                     </div>
             </Intro>
