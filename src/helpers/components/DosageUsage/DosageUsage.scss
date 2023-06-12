@@ -39,6 +39,12 @@
     font-size: 21px;
 }
 
+.DosageUsage-AddText {
+    background-color: $blue;
+    border-radius: 5px;
+    font-style: normal;
+}
+
 @media (max-width: 400px) {
     .DosageUsage-TextWrapper{
         font-size: 18px;
