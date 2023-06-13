@@ -59,16 +59,26 @@
   text-align: left;
   user-select: none;
   width: 100%;
-  max-width: 650px;
-  padding: 15px 20px 0px 20px;
+  padding: 15px 20px 15px 20px;
   font-family: Nutito-Light;
   font-weight: 300;
 }
 
 .Advantages-Menu-Subtext {
-  margin-top: 5px;
+  margin: 5px 0 5px 0px;
   font-family: Nutito-Light;
   font-weight: 300;
+}
+
+.Advantages-Menu-AdditionalText {
+  margin: 0;
+  font-family: Nutito-Light;
+  font-weight: 600;
+  font-style: normal;
+  color: $purple;
+  background-color: $blue;
+  border-radius: 5px;
+  padding: 0;
 }
 
 @media (max-width: 426px) {

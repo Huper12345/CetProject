@@ -9,7 +9,6 @@ import { Questions } from "../../helpers/components/Questions";
 import { DosageUsage } from "../../helpers/components/DosageUsage";
 import { Footer } from "../../components/Footer";
 import { Publications } from "../../components/Publications";
-import { TopButton } from "../../helpers/components/TopButton";
 import Zaec from "../../helpers/Images/Intro/mishaZaec.webp"
 import DropsPack from "../../helpers/Images/Packs/kapli16.webp"
 import BabyMarker from "../../helpers/Images/Markers/baby-boy1.webp"
@@ -57,7 +56,11 @@ export const CetDrops = () => {
             <DosageUsage 
             MainText="Лекарственный препарат «Цетиризин» капли в дозировке 10 мг/мл предназначен для применения у взрослых и детей с 6 месяцев и старше для облегчения:"
             subtext1="Симптомов сезонного и постоянного аллергического ринита и конъюктивита"
-            subtext2="Гипермии хронической идиопатической крапивницы"
+            subtext2="Симптомов хронической идиопатической крапивницы"
+            subtext3="Для облегчения симптомов постоянного аллергического ринита "
+            addText3="(дети от 6 месяцев до 2 лет)"
+            subtext4="Для облегчения симптомов хронической идиопатической "
+            addText4="(дети от 6 месяцев до 2 лет)"
             href="https://www.rceth.by/NDfiles/instr/19_07_2952_s.pdf"
             />
             <div className="section">
@@ -66,20 +69,14 @@ export const CetDrops = () => {
                     <EatJournal FoodDiary={FoodDiaryTab} />
                 </div>
             </div>
-            <Questions 
-            Usage="Дети 2-5 лет
-
-            Рекомендуемая доза составляет 2,5 мг (6 капель) два раза в день.
-            
-            Дети от 1 года до 2 лет
-            
-            Рекомендуемая доза составляет 2,5 мг (6 капель) один или два раза в день.
-            
-            Дети от 6 месяцев до 1 года
-            
-            Рекомендуемая доза составляет 2,5 мг (6 капель) один раз в день.
-            
-            Максимальная продолжительность лечения у детей с сезонным ринитом не должна превышать 4 недели."
+            <Questions
+            UsageAdd1="Дети 2-5 лет"
+            Usage=" - рекомендуемая доза составляет 2,5 мг (6 капель) два раза в день."
+            UsageAdd2="Дети от 1 года до 2 лет"             
+            Usage3=" - рекомендуемая доза составляет 2,5 мг (6 капель) два раза в день."
+            UsageAdd3="Дети от 6 месяцев до 1 года"
+            Usage4=" - рекомендуемая доза составляет 2,5 мг (6 капель) один раз в день."
+            Usage5="Максимальная продолжительность лечения у детей с сезонным ринитом не должна превышать 4 недели."
             />
             <Publications />
             <Footer 
