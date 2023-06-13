@@ -9,7 +9,6 @@ import { Questions } from "../../helpers/components/Questions";
 import { DosageUsage } from "../../helpers/components/DosageUsage";
 import { Footer } from "../../components/Footer";
 import { Publications } from "../../components/Publications";
-import { TopButton } from "../../helpers/components/TopButton";
 import Zaec from "../../helpers/Images/Intro/mishaZaec.webp"
 import DropsPack from "../../helpers/Images/Packs/kapli16.webp"
 import BabyMarker from "../../helpers/Images/Markers/baby-boy1.webp"
