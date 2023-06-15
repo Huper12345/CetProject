@@ -8,9 +8,13 @@ import { Header } from "../../components/Header";
 import { Title } from "../../helpers/Title";
 import { PreviousButton } from "../../helpers/components/PreviousButton"
 import { Footer } from "../../components/Footer"
+import { createRef } from "react"
+import { TopButton } from "../../helpers/components/TopButton"
 
 
 export const EatJournalRools = () => {
+    const refComponent = createRef();
+    
     return(
         <div className="EatJournalRools">
             <Header 
@@ -18,7 +22,7 @@ export const EatJournalRools = () => {
             MainLink="/"
             />
             <div className="container">
-                <div className="Eat-Rools-Wrapper">
+                <div id="Eat-Roolls-Wrapper" className="Eat-Rools-Wrapper">
                     <PreviousButton />
                     <Title TitleText="Правила ведения дневника" />
                     <div className="Rools-Item">
@@ -39,7 +43,11 @@ export const EatJournalRools = () => {
                         </div>
                     </div>{/*Rools-Item */}
                     <Title TitleText="Рацион питания" />
-                    <div className="Rools-Food-Content">
+                    
+                    <div 
+                    ref={refComponent} 
+                    className="Rools-Food-Content"
+                    >
 
                         <div className="Rools-Food-Wrapper">
                             <div className="Rools-Food-Item">
@@ -142,22 +150,18 @@ export const EatJournalRools = () => {
                     <div className="EatJournal-Attention">Перед выбором рациона питания настоятельно рекомендуем проконсультироваться с врачом!</div>
                 </div>
             </div>
+            <TopButton 
+            refComponent={refComponent} 
+            linkWay="Eat-Rools-Wrapper"
+            />
             <Footer
-            Navhref1="Intro"
-            Navtext1="Препарат"
-            Navhref2="DosageUsage"
-            Navtext2="Применение/дозировка"
-            Navhref3="EatJournal"
-            Navtext3="Пищевой дневник"
-            Navhref4="Pubclications"
-            Navtext4="Полезные материалы"
+            InstructionButtonStatus="Instruction-Button Hide" 
             Navroutelink1="/"
             Navroutetext1="Главная"
             Navroutelink2="/Tablets"
             Navroutetext2="Цетиризин таблетки"
             Navroutelink3="/Drops"
             Navroutetext3="Цетиризин капли"
-            InstructionButtonStatus="Instruction-Button Hide"
             />
         </div>
     );
