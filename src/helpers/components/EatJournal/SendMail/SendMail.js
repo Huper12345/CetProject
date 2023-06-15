@@ -1,11 +1,9 @@
 import "./SendMail.scss"
-import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
-import { ToastContainer, toast } from 'react-toastify';
+import { useRef, useState } from "react";
+import { toast } from 'react-toastify';
 import { SubTitle } from "../../SubTitle";
 import 'react-toastify/dist/ReactToastify.css';
-
 
 
 
@@ -13,16 +11,21 @@ export const SendMail = () => {
     const [emailText, setEmailText] = useState("");
     const form = useRef();
 
+    const NotifyYes = "custom-id-yes-Mail";
+    const NotifyNo = "custom-id-no-Mail";
+
     const notifySucsesfully = () => {
         toast.success("Успешно отправлено", {
-            position: toast.POSITION.TOP_RIGHT
+          toastId: NotifyYes,  
+          position: toast.POSITION.TOP_RIGHT,
           });
     
     }
 
     const notifyFailed = () => {
         toast.error("Что-то пошло не так...", {
-            position: toast.POSITION.TOP_RIGHT
+          toastId: NotifyNo,   
+          position: toast.POSITION.TOP_RIGHT
           });
     }
 
@@ -74,9 +77,6 @@ export const SendMail = () => {
                 form="Send-Form"
                 >
                 Отправить</button>
-                <ToastContainer 
-                theme="light"
-                />
             </form>
         </div>
     );

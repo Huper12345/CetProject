@@ -3,7 +3,7 @@ import "./DoctorQuestion.scss";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import DoctorImage from"./Images/doctorquestion.webp";
 
@@ -14,17 +14,23 @@ export const DoctorQuestion = () => {
 
   const form = useRef();
 
-  const notifySucsesfully = () => {
-    toast.success("Успешно отправлено", {
-        position: toast.POSITION.TOP_RIGHT
-      });
-}
+  const NotifyYesDoctor = "custom-id-yes-Doctor";
+  const NotifyNoDoctor = "custom-id-no-Doctor";
 
-const notifyFailed = () => {
-    toast.error("Что-то пошло не так...", {
+  const notifySucsesfullyDoctor = () => {
+      toast.success("Успешно отправлено", {
+        toastId: NotifyYesDoctor,  
+        position: toast.POSITION.TOP_RIGHT,
+        });
+  
+  }
+
+  const notifyFailedDoctor = () => {
+      toast.error("Что-то пошло не так...", {
+        toastId: NotifyNoDoctor,   
         position: toast.POSITION.TOP_RIGHT
-      });
-}
+        });
+  }
 
   const nameSelect = (e) => {
     setNameText(e.target.value);
@@ -49,13 +55,13 @@ const notifyFailed = () => {
       )
       .then(
         (result) => {
-            notifySucsesfully();
+            notifySucsesfullyDoctor();
             setTextArea("");
             setEmailText("");
             setNameText("");
         },
         (error) => {
-            notifyFailed();
+            notifyFailedDoctor();
             setTextArea("");
             setEmailText("");
             setNameText("");
@@ -104,9 +110,6 @@ const notifyFailed = () => {
               value={textAreaText}
               onChange={textAreaSelect}
             ></textarea>
-            <ToastContainer 
-                theme="light"
-                />
           </form>
           <button 
           className="Doctor-Question-Button"

@@ -10,14 +10,6 @@
   transition: 0.3s;
 }
 
-.Plus-Icon:hover::after {
-  background-color: $blue;
-}
-
-.Plus-Icon:hover::before {
-  background-color: $blue;
-}
-
 .Plus-Icon.active::after {
  background-color: $blue;
 }
@@ -61,6 +53,16 @@
 
 .Advantages-Button:hover .PlusIcon::after {
   background-color: $blue;
+}
+
+@media (min-width: 900px) {
+  .Plus-Icon:hover::after {
+    background-color: $blue;
+  }
+  
+  .Plus-Icon:hover::before {
+    background-color: $blue;
+  }
 }
 
 @media (max-width: 426px) {

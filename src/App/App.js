@@ -11,6 +11,7 @@ import { EatJournalRools } from '../pages/EatJournalRools';
 import { CetDrops } from '../pages/CetDrops';
 import { Post1 } from '../pages/Publications/Posts/Post1';
 import { Post2 } from '../pages/Publications/Posts/Post2';
+import { ToastContainer } from 'react-toastify';
 
 export const App = () => {
   const location = useLocation()
@@ -48,6 +49,9 @@ export const App = () => {
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
         </div>
+        <ToastContainer 
+                theme="light"
+                />
       </animated.div>
   ))
 };
