@@ -17,6 +17,7 @@ export const Advantages = ({
   addtext3,
   addtext4,
   addtext5,
+  className="Advantages",
   Style="Advantages-Button"}) => {
     const [open, setOpen] = useState(false);
   
@@ -26,7 +27,7 @@ export const Advantages = ({
   
 
     return (
-      <div className="Advantages">
+      <div className={className}>
         <button
           className={open ? 'Advantages-Button active' : Style}
           onClick={handleOpen}

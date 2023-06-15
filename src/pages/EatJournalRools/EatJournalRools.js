@@ -139,6 +139,7 @@ export const EatJournalRools = () => {
                         </div>{/*Rools-Food-Wrapper */}
                     </div>
 
+                    <div className="EatJournal-Attention">Перед выбором рациона питания настоятельно рекомендуем проконсультироваться с врачом!</div>
                 </div>
             </div>
             <Footer
