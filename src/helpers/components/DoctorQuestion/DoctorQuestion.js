@@ -77,7 +77,7 @@ export const DoctorQuestion = () => {
           <img className="Doctor-Img" alt="Doctor" src={DoctorImage}></img>
         </div>
         <div className="Doctor-Question-Content">
-          <div className="Doctor-Description">Если у вас есть интресующий вас вопрос но вы не нашли ответа на нашем сайте, вы всегда можете задать вопрос нашему специалисту и получить нужную вам информацию о препарате</div>
+          <div className="Doctor-Description">Если у Вас есть интересующий вопрос, но Вы не нашли ответа на нашем сайте, Вы всегда можете задать вопрос нашему специалисту и получить нужную Вам информацию о препарате</div>
           <form
             onSubmit={sendEmail}
             ref={form}
