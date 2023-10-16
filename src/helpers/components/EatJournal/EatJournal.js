@@ -10,7 +10,7 @@ export const EatJournal = ({FoodDiary}) => {
                 <div className="EatJournal-Inner">
                     <div className="EatJournal-Content">
                         <h3 className="EatJournal-Title">
-                        Пищевой дневник – удобный инструмент для консультации со специалистом и обмена опыта с другими мамами.
+                        Пищевой дневник – удобный инструмент для консультации со специалистом и обмена опытом с другими мамами.
                         </h3>
                         <div className="EatJournal-Download">
                             <a href={FoodDiary} target="blank" className="EatJournal-Button">Открыть дневник</a>
